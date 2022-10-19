@@ -1,0 +1,3 @@
+alias v="nvim"
+alias t="tmux"
+alias ls="exa"
