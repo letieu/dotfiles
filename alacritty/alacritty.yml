@@ -1,0 +1,73 @@
+import:
+  - ~/.alacritty-colorscheme/themes/ayu_dark.yaml
+
+env:
+  TERM: xterm-256color
+
+section:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  save_to_clipboard: true
+
+scrolling:
+  history: 10000
+  multiplier: 3
+  auto_scroll: false
+
+mouse:
+  hints:
+    launcher:
+      program: open
+    modifiers: Command
+
+draw_bold_text_with_bright_colors: true
+
+# Font configuration
+font:
+  normal:
+    family: MonoLisa Nerd Font Mono
+    style: Book
+
+  bold:
+    family: MonoLisa Nerd Font
+    style: Bold
+
+  italic:
+    family: MonoLisa Nerd Font
+    style: Book Italic
+
+  bold_italic:
+    family: MonoLisa Nerd Font
+    style: Bold Italic
+
+  # Point size
+  size: 13
+  use_thin_strokes: false
+
+  offset:
+   x: 0
+   y: 15
+  glyph_offset:
+   # x: 0
+   y: 10
+
+window:
+  # Window dimensions in character columns and lines
+  # (changes require restart)
+  dimensions:
+    columns: 0
+    lines: 0
+
+  padding:
+    x: 0
+
+  dynamic_padding: true
+  decorations: buttonless
+  startup_mode: Windowed
+
+key_bindings:
+  - { key: J,        mods: Alt,     chars: "\x1bj"                       }
+  - { key: K,        mods: Alt,     chars: "\x1bk"                       }
+  - { key: H,        mods: Alt,     chars: "\x1bh"                       }
+  - { key: L,        mods: Alt,     chars: "\x1bl"                       }
+  - { key: I,        mods: Alt,     chars: "\x1bi"                       }
+  - { key: V,        mods: Alt,     chars: "\x1bv"                       }

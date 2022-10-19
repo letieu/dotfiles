@@ -2,6 +2,11 @@
 !/.gitignore
 
 !/tmux/
+!/tmux/**
+
 !/nvim/
+!/nvim/**
+
 !/alacritty/
+!/alacritty/**
 
