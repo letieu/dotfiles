@@ -9,6 +9,15 @@ return {
 
   ['tamton-aquib/duck.nvim'] = {},
 
+  ['kevinhwang91/promise-async'] = {},
+
+  ['kevinhwang91/nvim-ufo'] = {
+    after = "nvim-lspconfig",
+    config = function ()
+      require("custom.plugins.nvim-ufo")
+    end
+  },
+
   ['gorbit99/codewindow.nvim'] = {
     config = function()
       local codewindow = require('codewindow')
@@ -43,9 +52,6 @@ return {
   ["kyazdani42/nvim-tree.lua"] = {
     override_options = overrides.nvimtree,
   },
-
-  -- remove plugins
-  ["NvChad/nvterm"] = false;
 
    -- code formatting, linting etc
   ["jose-elias-alvarez/null-ls.nvim"] = {
