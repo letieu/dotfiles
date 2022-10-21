@@ -28,15 +28,15 @@ font:
     style: Book
 
   bold:
-    family: MonoLisa Nerd Font
+    family: MonoLisa Nerd Font Mono
     style: Bold
 
   italic:
-    family: MonoLisa Nerd Font
+    family: MonoLisa Nerd Font Mono
     style: Book Italic
 
   bold_italic:
-    family: MonoLisa Nerd Font
+    family: MonoLisa Nerd Font Mono
     style: Bold Italic
 
   # Point size
