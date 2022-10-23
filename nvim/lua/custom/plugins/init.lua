@@ -12,7 +12,7 @@ return {
   ['kevinhwang91/promise-async'] = {},
 
   ['kevinhwang91/nvim-ufo'] = {
-    after = "nvim-lspconfig",
+    after = "promise-async",
     config = function ()
       require("custom.plugins.nvim-ufo")
     end
@@ -30,6 +30,13 @@ return {
     config = function ()
       require("project_nvim").setup {}
     end
+  },
+
+
+  ['simrat39/symbols-outline.nvim'] = {
+    config = function()
+      require "custom.plugins.symbols-outline"
+    end,
   },
 
   -- Override plugin definition options
