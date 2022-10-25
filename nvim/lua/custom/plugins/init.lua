@@ -39,6 +39,19 @@ return {
     end,
   },
 
+  ['zbirenbaum/copilot.lua'] = {
+    config = function ()
+      require "custom.plugins.copilot"
+    end
+  },
+
+  ['zbirenbaum/copilot-cmp'] = {
+    after = { "copilot.lua" },
+    config = function ()
+      require("copilot_cmp").setup()
+    end
+  },
+
   -- Override plugin definition options
   ["neovim/nvim-lspconfig"] = {
     config = function()
