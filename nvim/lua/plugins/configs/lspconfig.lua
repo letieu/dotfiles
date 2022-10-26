@@ -24,7 +24,6 @@ M.on_attach = function(client, bufnr)
   end
 
   utils.load_mappings("lspconfig", { buffer = bufnr })
-  vim.cmd "SymbolsOutlineOpen"
 
   if client.server_capabilities.signatureHelpProvider then
     require("nvchad_ui.signature").setup(client)
