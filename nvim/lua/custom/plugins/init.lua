@@ -45,10 +45,9 @@ return {
     end
   },
 
-  ['zbirenbaum/copilot-cmp'] = {
-    after = { "copilot.lua" },
+  ['sindrets/diffview.nvim'] = {
     config = function ()
-      require("copilot_cmp").setup()
+      require "custom.plugins.diffview"
     end
   },
 
