@@ -51,6 +51,22 @@ return {
     end
   },
 
+  ['kylechui/nvim-surround'] = {
+    config = function()
+        require("nvim-surround").setup()
+    end
+  },
+
+  ['ThePrimeagen/refactoring.nvim'] = {
+    config = function ()
+      require "custom.plugins.refactoring"
+    end
+  },
+
+
+
+
+
   -- Override plugin definition options
   ["neovim/nvim-lspconfig"] = {
     config = function()

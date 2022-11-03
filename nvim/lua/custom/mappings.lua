@@ -97,4 +97,14 @@ M.blankline = {
   },
 }
 
+M.refactoring = {
+  n = {
+    ["<leader>rr"] = { "<cmd> lua require('refactoring').select_refactor() <CR>", "refactoring" },
+  },
+
+  v = {
+    ["<leader>rr"] = { "<cmd> lua require('refactoring').select_refactor() <CR>", "refactoring" },
+  }
+}
+
 return M
