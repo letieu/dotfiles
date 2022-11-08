@@ -63,9 +63,11 @@ return {
     end
   },
 
-
-
-
+  ['narutoxy/silicon.lua'] = {
+    config = function ()
+      require "custom.plugins.silicon"
+    end
+  },
 
   -- Override plugin definition options
   ["neovim/nvim-lspconfig"] = {

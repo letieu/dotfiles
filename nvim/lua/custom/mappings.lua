@@ -10,6 +10,12 @@ M.disabled = {}
 
 M.general = {}
 
+M.silicon = {
+  v = {
+    ["<leader>s"] = { "<cmd>lua require('silicon').visualise_api({to_clip = true})<cr>", "Silicon" },
+  }
+}
+
 M.harpoon = {
   n = {
     ["<leader>h"] = { "<cmd> lua require('harpoon.ui').toggle_quick_menu() <CR>", "harpoon menu" },
