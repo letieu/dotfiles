@@ -45,12 +45,12 @@ return {
     end
   },
 
-  ['sindrets/diffview.nvim'] = {
-    config = function ()
-      require "custom.plugins.diffview"
-    end
-  },
-
+  -- ['sindrets/diffview.nvim'] = {
+  --   config = function ()
+  --     require "custom.plugins.diffview"
+  --   end
+  -- },
+  --
   ['kylechui/nvim-surround'] = {
     config = function()
         require("nvim-surround").setup()
@@ -73,6 +73,22 @@ return {
     run = "cd app && npm install",
     setup = function()
       vim.g.mkdp_filetypes = { "markdown" }
+    end
+  },
+
+  ['anuvyklack/hydra.nvim'] = {},
+
+  ['jbyuki/venn.nvim'] = {
+    setup = function()
+      require "custom.plugins.venn"
+    end,
+  },
+
+  ['eandrju/cellular-automaton.nvim'] = {},
+
+  ['phaazon/mind.nvim'] = {
+    config = function()
+      require'mind'.setup()
     end
   },
 
