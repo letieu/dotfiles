@@ -92,6 +92,8 @@ return {
     end
   },
 
+  ['ellisonleao/glow.nvim'] = {},
+
   -- Override plugin definition options
   ["neovim/nvim-lspconfig"] = {
     config = function()
