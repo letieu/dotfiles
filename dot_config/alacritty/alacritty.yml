@@ -1,0 +1,73 @@
+import:
+  - ~/.config/alacritty/github/light.yml
+
+env:
+  TERM: xterm-256color
+
+section:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  save_to_clipboard: true
+
+scrolling:
+  history: 10000
+  multiplier: 3
+  auto_scroll: false
+
+mouse:
+  hints:
+    launcher:
+      program: open
+    modifiers: Command
+
+draw_bold_text_with_bright_colors: true
+
+# Font configuration
+font:
+  normal:
+    family: MonoLisa Nerd Font Mono
+    style: Light
+  bold:
+    family: MonoLisa Nerd Font Mono
+    style: Bold
+
+  italic:
+    family: MonoLisa Nerd Font Mono
+    style: Book Italic
+
+  bold_italic:
+    family: MonoLisa Nerd Font Mono
+    style: Bold Italic
+
+  # Point size
+  size: 13
+
+  offset:
+   x: 0
+   y: 10
+
+  glyph_offset:
+   # x: 0
+   y: 5
+
+window:
+  opacity: 0.7
+  # Window dimensions in character columns and lines
+  # (changes require restart)
+
+  padding:
+    x: 5
+
+  dynamic_padding: true
+  decorations: buttonless
+  # startup_mode: Windowed
+  dimensions:
+    columns: 200
+    lines: 60
+
+key_bindings:
+  - { key: J,        mods: Alt,     chars: "\x1bj"                       }
+  - { key: K,        mods: Alt,     chars: "\x1bk"                       }
+  - { key: H,        mods: Alt,     chars: "\x1bh"                       }
+  - { key: L,        mods: Alt,     chars: "\x1bl"                       }
+  - { key: I,        mods: Alt,     chars: "\x1bi"                       }
+  - { key: V,        mods: Alt,     chars: "\x1bv"                       }
