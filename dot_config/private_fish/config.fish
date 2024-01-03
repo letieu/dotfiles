@@ -35,6 +35,7 @@ set PATH /opt/homebrew/bin $PATH
 set PATH /Users/soinmedia/.bun/bin $PATH
 set PATH ~/.cargo/bin $PATH
 set PATH ~/.local/bin $PATH
+set PATH ~/.mycripts/bin $PATH
 set PATH /Users/soinmedia/flutter/flutter/bin $PATH
 set PATH /Applications/WezTerm.app/Contents/MacOS $PATH
 
