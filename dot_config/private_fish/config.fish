@@ -18,18 +18,6 @@ function c
     end
 end
 
-# like c, but open nvim after c
-function cv
-    if test -d $argv[1]
-      cd $argv[1]
-    else
-      z $argv[1]
-    end
-
-    # open nvim
-    v
-end
-
 # PATH
 set PATH /opt/homebrew/bin $PATH
 set PATH /Users/soinmedia/.bun/bin $PATH
@@ -49,6 +37,7 @@ alias mux="tmuxinator"
 alias ghs="gh copilot suggest"
 alias ghe="gh copilot explain"
 alias icat="wezterm imgcat"
+alias gcs="gcloud cloud-shell ssh"
 
 # Init
 starship init fish | source
@@ -64,3 +53,6 @@ set -gx PATH "$PNPM_HOME" $PATH
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/soinmedia/google-cloud-sdk/path.fish.inc' ]; . '/Users/soinmedia/google-cloud-sdk/path.fish.inc'; end
+
+source $__fish_config_dir/themes/github_light.fish
+
