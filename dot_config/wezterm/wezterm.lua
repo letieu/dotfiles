@@ -12,8 +12,8 @@ config.font_size = 14.0
 config.line_height = 1.1
 
 config.window_decorations = 'RESIZE'
-config.initial_rows = 50
-config.initial_cols = 300
+config.initial_rows = 49
+config.initial_cols = 190
 config.hide_tab_bar_if_only_one_tab = true
 config.color_scheme = 'Google (light) (terminal.sexy)'
 
