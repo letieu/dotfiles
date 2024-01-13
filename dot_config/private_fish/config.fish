@@ -1,7 +1,3 @@
-if status is-interactive
-    # Commands to run in interactive sessions can go here
-end
-
 set fish_greeting
 
 # Environment
@@ -38,6 +34,11 @@ alias ghs="gh copilot suggest"
 alias ghe="gh copilot explain"
 alias icat="wezterm imgcat"
 alias gcs="gcloud cloud-shell ssh"
+
+if status is-interactive
+    # Commands to run in interactive sessions can go here
+    atuin init fish | source
+end
 
 # Init
 starship init fish | source
