@@ -36,8 +36,6 @@ alias icat="wezterm imgcat"
 alias gcs="gcloud cloud-shell ssh"
 
 if status is-interactive
-    # Commands to run in interactive sessions can go here
-    atuin init fish | source
 end
 
 # Init
@@ -57,3 +55,4 @@ if [ -f '/Users/soinmedia/google-cloud-sdk/path.fish.inc' ]; . '/Users/soinmedia
 
 source $__fish_config_dir/themes/github_light.fish
 
+fzf_configure_bindings
