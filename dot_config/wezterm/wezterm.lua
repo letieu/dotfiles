@@ -9,10 +9,10 @@ if wezterm.config_builder then
 end
 
 config.font_size = 14.0
-config.line_height = 1.1
+config.line_height = 1.2
 
 config.window_decorations = 'RESIZE'
-config.initial_rows = 49
+config.initial_rows = 43
 config.initial_cols = 190
 config.hide_tab_bar_if_only_one_tab = true
 config.color_scheme = 'Google (light) (terminal.sexy)'
