@@ -61,8 +61,8 @@ return {
     action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' },
   },
   {
-    key = 'E',
-    mods = 'CTRL|SHIFT',
+    key = 'r',
+    mods = 'CMD',
     action = wezterm.action.PromptInputLine {
       description = 'Enter new name for tab',
       action = wezterm.action_callback(function(window, pane, line)
