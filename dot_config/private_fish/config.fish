@@ -53,6 +53,12 @@ set -gx PATH "$PNPM_HOME" $PATH
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/soinmedia/google-cloud-sdk/path.fish.inc' ]; . '/Users/soinmedia/google-cloud-sdk/path.fish.inc'; end
 
-source $__fish_config_dir/themes/github_light.fish
-
 fzf_configure_bindings
+
+set macos_theme (defaults read -g AppleInterfaceStyle 2>/dev/null)
+
+if test "$macos_theme" = "Dark"
+    fish_config theme choose "Catppuccin Mocha"
+else
+    fish_config theme choose "Catppuccin Latte"
+end
