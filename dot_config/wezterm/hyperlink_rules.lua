@@ -58,8 +58,10 @@ end
 
 local function open_in_nvim(full_path, line)
   local server_id = get_nvim_server_id()
-  wezterm.run_child_process { '/opt/homebrew/bin/nvr', '--servername',
-    server_id, full_path, '-c', line }
+
+  local nvim_command = string.format("<C-\\><C-N>:e %s<CR>:normal %dG<CR>", full_path, line)
+  wezterm.run_child_process({ "/Users/soinmedia/nvim-macos/bin/nvim", "--server", server_id, "--remote-send",
+    nvim_command })
 end
 
 -- Listen for the "open-uri" escape sequence and open the URI in
