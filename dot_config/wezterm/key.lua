@@ -66,13 +66,42 @@ return {
     action = wezterm.action.PromptInputLine {
       description = 'Enter new name for tab',
       action = wezterm.action_callback(function(window, pane, line)
-        -- line will be `nil` if they hit escape without entering anything
-        -- An empty string if they just hit enter
-        -- Or the actual line of text they wrote
         if line then
           window:active_tab():set_title(line)
         end
       end),
     },
+  },
+  {
+    key = ';',
+    mods = 'CTRL',
+    action = wezterm.action_callback(function(window, pane)
+      local tab = window:active_tab()
+      if is_vim(pane) then
+        if (#tab:panes()) == 1 then
+          pane:split { direction = 'Bottom' }
+        else
+          window:perform_action({
+            SendKey = { key = ';', mods = 'CTRL' },
+          }, pane)
+        end
+        return
+      end
+
+      local vim_pane = nil
+
+      for _, p in ipairs(tab:panes()) do
+        local is_vim_pane = p:get_user_vars().IS_NVIM == 'true'
+        if is_vim_pane then
+          vim_pane = p
+          break
+        end
+      end
+
+      if vim_pane then
+        vim_pane:activate()
+        tab:set_zoomed(true)
+      end
+    end),
   }
 };
