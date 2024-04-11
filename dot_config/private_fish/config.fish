@@ -18,6 +18,7 @@ end
 set PATH /opt/homebrew/bin $PATH
 set PATH /Users/soinmedia/.bun/bin $PATH
 set PATH ~/.cargo/bin $PATH
+set PATH ~/go/bin $PATH
 set PATH ~/.local/bin $PATH
 set PATH ~/.mycripts/bin $PATH
 set PATH /Users/soinmedia/flutter/flutter/bin $PATH
@@ -35,6 +36,7 @@ alias ghs="gh copilot suggest"
 alias ghe="gh copilot explain"
 alias icat="wezterm imgcat"
 alias gcs="gcloud cloud-shell ssh"
+alias kv="NVIM_APPNAME=nvim-kickstart nvim"
 
 if status is-interactive
 end
