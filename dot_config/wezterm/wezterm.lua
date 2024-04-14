@@ -9,11 +9,11 @@ if wezterm.config_builder then
 end
 
 config.font_size = 14.0
-config.line_height = 1.2
+config.line_height = 1.3
 
 config.window_decorations = 'RESIZE'
-config.initial_rows = 43
-config.initial_cols = 190
+config.initial_rows = 40
+config.initial_cols = 180
 config.hide_tab_bar_if_only_one_tab = true
 
 config.inactive_pane_hsb = {
