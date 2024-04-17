@@ -49,16 +49,19 @@ local function split_nav(resize_or_move, key)
 end
 
 return {
+
 	-- move between split panes
 	split_nav("move", "h"),
 	split_nav("move", "j"),
 	split_nav("move", "k"),
 	split_nav("move", "l"),
+
 	-- resize panes
 	split_nav("resize", "h"),
 	split_nav("resize", "j"),
 	split_nav("resize", "k"),
 	split_nav("resize", "l"),
+
 	-- split panes
 	{
 		key = "-",
@@ -70,18 +73,22 @@ return {
 		mods = "META",
 		action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
 	},
+
+	-- Rename tab
 	{
 		key = "r",
 		mods = "CMD",
 		action = wezterm.action.PromptInputLine({
 			description = "Enter new name for tab",
-			action = wezterm.action_callback(function(window, pane, line)
+			action = wezterm.action_callback(function(window, _, line)
 				if line then
 					window:active_tab():set_title(line)
 				end
 			end),
 		}),
 	},
+
+	-- Toggle zoom for neovim
 	{
 		key = ";",
 		mods = "CTRL",
@@ -109,5 +116,12 @@ return {
 				tab:set_zoomed(true)
 			end
 		end),
+	},
+
+	-- Workspaces manager
+	{
+		key = "W",
+		mods = "CMD|SHIFT",
+		action = wezterm.action.ShowLauncherArgs({ flags = "FUZZY|WORKSPACES" }),
 	},
 }
