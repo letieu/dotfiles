@@ -8,11 +8,11 @@ local function is_vim(pane)
 end
 
 local function find_vim_pane(tab)
-  for _, pane in ipairs(tab:panes()) do
-    if is_vim(pane) then
-      return pane
-    end
-  end
+	for _, pane in ipairs(tab:panes()) do
+		if is_vim(pane) then
+			return pane
+		end
+	end
 end
 
 local direction_keys = {
@@ -88,13 +88,13 @@ return {
 		action = wezterm.action_callback(function(window, pane)
 			local tab = window:active_tab()
 
-      -- Open pane below if current pane is vim
+			-- Open pane below if current pane is vim
 			if is_vim(pane) then
 				if (#tab:panes()) == 1 then
-          -- Open pane below if when there is only one pane and it is vim
+					-- Open pane below if when there is only one pane and it is vim
 					pane:split({ direction = "Bottom" })
 				else
-          -- Send `CTRL-; to vim`, navigate to bottom pane from vim
+					-- Send `CTRL-; to vim`, navigate to bottom pane from vim
 					window:perform_action({
 						SendKey = { key = ";", mods = "CTRL" },
 					}, pane)
@@ -102,8 +102,8 @@ return {
 				return
 			end
 
-      -- Zoom to vim pane if it exists
-      local vim_pane = find_vim_pane(tab)
+			-- Zoom to vim pane if it exists
+			local vim_pane = find_vim_pane(tab)
 			if vim_pane then
 				vim_pane:activate()
 				tab:set_zoomed(true)
