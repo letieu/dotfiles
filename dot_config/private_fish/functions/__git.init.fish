@@ -45,6 +45,7 @@ function __git.init
   __git.create_abbr gcav!      git commit -a -v --no-verify --amend
   __git.create_abbr gcm        git commit -m
   __git.create_abbr gcam       git commit -a -m
+  __git.create_abbr gcs        git commit -S
   __git.create_abbr gscam      git commit -S -a -m
   __git.create_abbr gcfx       git commit --fixup
   __git.create_abbr gcf        git config --list
@@ -131,6 +132,7 @@ function __git.init
   __git.create_abbr gsh        git show
   __git.create_abbr gsd        git svn dcommit
   __git.create_abbr gsr        git svn rebase
+  __git.create_abbr gsb        git status -sb
   __git.create_abbr gss        git status -s
   __git.create_abbr gst        git status
   __git.create_abbr gsta       git stash
