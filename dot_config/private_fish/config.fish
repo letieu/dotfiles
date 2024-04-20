@@ -16,8 +16,7 @@ set PATH /Users/soinmedia/flutter/flutter/bin $PATH
 set PATH /Applications/WezTerm.app/Contents/MacOS $PATH
 
 # Aliases
-alias v="~/nvim-macos/bin/nvim"
-alias nvim="~/nvim-macos/bin/nvim"
+alias v="nvim"
 alias ls="exa --icons"
 alias cat="bat"
 alias ghs="gh copilot suggest"
@@ -27,6 +26,5 @@ alias kv="NVIM_APPNAME=nvim-kickstart nvim"
 
 fish_vi_key_bindings
 
-starship init fish | source
 fzf --fish | source
 zoxide init fish | source
