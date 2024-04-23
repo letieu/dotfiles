@@ -18,14 +18,20 @@ set PATH /Users/soinmedia/nvim-macos/bin $PATH
 
 # Aliases
 alias v="nvim"
+alias kv="NVIM_APPNAME=nvim-kickstart nvim"
 alias ls="exa --icons"
 alias cat="bat"
 alias ghs="gh copilot suggest"
 alias ghe="gh copilot explain"
 alias icat="wezterm imgcat"
-alias kv="NVIM_APPNAME=nvim-kickstart nvim"
+
+# Abbreviations
+abbr -a ghs "gh copilot suggest"
+abbr -a ghe "gh copilot explain"
+
+## easter egg
+alias 42="cowsay 'What is the answer to the Ultimate Question of Life, the Universe, and Everything?'"
 
 fish_vi_key_bindings
 
-fzf --fish | source
 zoxide init fish | source
