@@ -1,6 +1,5 @@
 local wezterm = require("wezterm")
 local keys = require("key")
-local hyperlink_rules = require("hyperlink_rules")
 
 local config = {}
 
@@ -18,11 +17,10 @@ config.initial_cols = 180
 config.use_fancy_tab_bar = false
 
 config.keys = keys
-config.hyperlink_rules = hyperlink_rules
 config.window_padding = {
-  left = 2,
-  right = 2,
-  top = 2,
+  left = 0,
+  right = 0,
+  top = 0,
   bottom = 0,
 }
 
