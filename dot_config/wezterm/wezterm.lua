@@ -12,20 +12,67 @@ config.line_height = 1.2
 
 config.window_decorations = "RESIZE"
 config.initial_rows = 45
-config.initial_cols = 180
+config.initial_cols = 200
 
 config.use_fancy_tab_bar = false
+config.show_new_tab_button_in_tab_bar = false
+config.tab_max_width = 22
 
 config.keys = keys
 config.window_padding = {
-  left = 0,
-  right = 0,
-  top = 0,
-  bottom = 0,
+	left = 0,
+	right = 0,
+	top = 0,
+	bottom = 0,
 }
 
-wezterm.on('update-right-status', function(window, pane)
-  window:set_right_status(window:active_workspace())
+config.colors = {
+	tab_bar = {
+		background = "black",
+	},
+}
+
+local function tab_title(tab_info)
+	local title = tab_info.tab_title
+
+	if title and #title > 0 then
+		return title
+	end
+
+	return tab_info.active_pane.title
+end
+
+wezterm.on("update-right-status", function(window, _)
+	window:set_right_status(window:active_workspace() .. " ")
+end)
+
+wezterm.on("format-tab-title", function(tab, tabs, panes, cf, hover, max_width)
+	local title = tab_title(tab)
+
+	title = wezterm.truncate_left(title, max_width)
+	local i = tab.tab_index + 1
+
+	title = string.format(" %d %s ", i, title)
+
+	local background = "black"
+	local foreground = "white"
+
+	if tab.is_active then
+		background = "white"
+		foreground = "black"
+	end
+
+	return {
+		{ Background = { Color = "black" } },
+		{ Foreground = { Color = "black" } },
+		{ Text = "" },
+		{ Background = { Color = background } },
+		{ Foreground = { Color = foreground } },
+		{ Text = title },
+		{ Background = { Color = "black" } },
+		{ Foreground = { Color = "black" } },
+		{ Text = "" },
+	}
 end)
 
 return config
