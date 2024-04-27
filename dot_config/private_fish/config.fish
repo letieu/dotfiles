@@ -19,7 +19,6 @@ set PATH /Users/soinmedia/nvim-macos/bin $PATH
 # Aliases
 alias v="nvim"
 alias kv="NVIM_APPNAME=nvim-kickstart nvim"
-alias ls="exa --icons"
 alias cat="bat"
 alias ghs="gh copilot suggest"
 alias ghe="gh copilot explain"
@@ -35,3 +34,4 @@ alias 42="cowsay 'What is the answer to the Ultimate Question of Life, the Unive
 fish_vi_key_bindings
 
 zoxide init fish | source
+thefuck --alias | source 
