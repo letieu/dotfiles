@@ -26,11 +26,9 @@ config.window_padding = {
 	bottom = 0,
 }
 
-config.colors = {
-	tab_bar = {
-		background = "black",
-	},
-}
+config.colors = require("color")
+config.window_background_opacity = 0.92
+config.macos_window_background_blur = 30
 
 local function tab_title(tab_info)
 	local title = tab_info.tab_title
@@ -54,12 +52,12 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, cf, hover, max_width)
 
 	title = string.format(" %d %s ", i, title)
 
-	local background = "black"
+	local background = "rgb(22, 24, 26 / 30%)"
 	local foreground = "white"
 
 	if tab.is_active then
-		background = "white"
-		foreground = "black"
+		background = "#16181a"
+		foreground = "white"
 	end
 
 	return {
@@ -72,7 +70,7 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, cf, hover, max_width)
 		{ Background = { Color = "black" } },
 		{ Foreground = { Color = "black" } },
 		{ Text = "" },
-	}
+}
 end)
 
 return config
