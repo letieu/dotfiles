@@ -27,8 +27,8 @@ config.window_padding = {
 }
 
 config.colors = require("color")
-config.window_background_opacity = 0.92
-config.macos_window_background_blur = 30
+config.window_background_opacity = 0.9
+config.macos_window_background_blur = 50
 
 local function tab_title(tab_info)
 	local title = tab_info.tab_title
@@ -40,10 +40,6 @@ local function tab_title(tab_info)
 	return tab_info.active_pane.title
 end
 
-wezterm.on("update-right-status", function(window, _)
-	window:set_right_status(window:active_workspace() .. " ")
-end)
-
 wezterm.on("format-tab-title", function(tab, tabs, panes, cf, hover, max_width)
 	local title = tab_title(tab)
 
@@ -52,13 +48,13 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, cf, hover, max_width)
 
 	title = string.format(" %d %s ", i, title)
 
-	local background = "rgb(22, 24, 26 / 30%)"
+	local background = "rgb(22, 24, 26 / 20%)"
 	local foreground = "white"
 
 	if tab.is_active then
-		background = "#16181a"
+		background = "rgb(22, 24, 26 / 90%)"
 		foreground = "white"
-	end
+  end
 
 	return {
 		{ Background = { Color = "black" } },
