@@ -11,8 +11,8 @@ config.font_size = 14.0
 config.line_height = 1.2
 
 config.window_decorations = "RESIZE"
-config.initial_rows = 45
-config.initial_cols = 200
+config.initial_rows = 40
+config.initial_cols = 150
 
 config.use_fancy_tab_bar = false
 config.show_new_tab_button_in_tab_bar = false
@@ -28,7 +28,7 @@ config.window_padding = {
 
 config.colors = require("color")
 config.window_background_opacity = 0.9
-config.macos_window_background_blur = 50
+config.macos_window_background_blur = 40
 
 local function tab_title(tab_info)
 	local title = tab_info.tab_title
