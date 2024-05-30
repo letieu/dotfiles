@@ -15,6 +15,7 @@ set PATH ~/.mycripts/bin $PATH
 set PATH /Users/soinmedia/flutter/flutter/bin $PATH
 set PATH /Applications/WezTerm.app/Contents/MacOS $PATH
 set PATH /Users/soinmedia/nvim-macos/bin $PATH
+set PATH ~/.pub-cache/bin $PATH
 
 # Aliases
 alias v="nvim"
