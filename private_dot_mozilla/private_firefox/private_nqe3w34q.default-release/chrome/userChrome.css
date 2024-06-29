@@ -1,0 +1,80 @@
+/*
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/.
+ */
+
+@import url("browser/main.css");
+
+
+:root {
+    --user-sidebar-width: 130px;
+    &[uidensity=compact] {
+        --user-sidebar-width: 110px;
+    }
+
+    @media (-moz-bool-pref: "uc.tweak.round-browser") {
+        --user-radius: 6px;
+    }
+
+    @media (-moz-bool-pref: "uc.tweak.browser-margins") {
+        --user-margin: 8px !important;
+        &[uidensity=compact] {
+            --user-margin: 6px !important;
+        }
+    }
+
+    @media (prefers-color-scheme: light) {
+        --user-bg: rgb(239, 239, 242) !important;
+        @media (-moz-bool-pref: "uc.tweak.translucency") {
+            --user-bg: color-mix(in srgb, rgb(239, 239, 242), transparent 20%) !important;
+        }
+    }
+
+    @media (prefers-color-scheme: dark) {
+        --user-bg: rgb(27, 26, 32) !important;
+        @media (-moz-bool-pref: "uc.tweak.translucency") {
+            --user-bg: color-mix(in srgb, rgb(27, 26, 32), transparent 20%) !important;
+        }
+    }
+
+    &[lwtheme="true"] {
+        --user-bg: var(--lwt-accent-color) !important;
+        @media (-moz-bool-pref: "uc.tweak.translucency") {
+            --user-bg: color-mix(in srgb, var(--lwt-accent-color), transparent 20%) !important;
+        }
+    }
+}
+
+.tab-close-button.close-icon {display:none !important;} 
+.titlebar-buttonbox-container{ display:none }
+
+tabs {
+    counter-reset: tab-counter;
+}
+
+tab:nth-child(1) .tab-label::before,
+tab:nth-child(2) .tab-label::before,
+tab:nth-child(3) .tab-label::before,
+tab:nth-child(4) .tab-label::before,
+tab:nth-child(5) .tab-label::before,
+tab:nth-child(6) .tab-label::before,
+tab:nth-child(7) .tab-label::before,
+tab:nth-child(8) .tab-label::before {
+    color: white;
+    content: counter(tab-counter) "";
+    counter-increment: tab-counter;
+    display: block;
+    float: left;
+    font-size: 0.8em;
+    font-weight: bold;
+    height: 1.5em;
+    line-height: 1;
+    margin: 0 0.5em 0 0;
+    padding: 0.1em 0.25em 0.25em 0.25em;
+    position: relative;
+    text-align: center;
+    top: 0.35em;
+    vertical-align: middle;
+    width: 1.4em;
+}

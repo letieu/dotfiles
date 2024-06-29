@@ -1,0 +1,84 @@
+/*
+* This Source Code Form is subject to the terms of the Mozilla Public
+* License, v. 2.0. If a copy of the MPL was not distributed with this
+* file, You can obtain one at https://mozilla.org/MPL/2.0/.
+*/
+
+@media (-moz-bool-pref: "uc.tweak.no-window-controls") { 
+  .titlebar-buttonbox-container {
+    display: none !important;
+  }
+}
+
+@media not (-moz-bool-pref: "uc.tweak.no-window-controls") { 
+  :root:not([inDOMFullscreen], [sizemode="fullscreen"]) {
+
+    & .titlebar-buttonbox-container {
+      height: 44px !important;
+      visibility: visible !important;
+      z-index: 100 !important;
+      position: absolute !important;
+    }
+    &[uidensity=compact] .titlebar-buttonbox-container { 
+      height: 34px !important; 
+    }
+
+    @media (-moz-platform: macos ) {
+      .titlebar-buttonbox-container {
+        top: 0px !important;
+        left: 0px !important;
+      }
+      #nav-bar {
+        margin-left: 68px !important;
+      }
+    }
+
+    @media (-moz-platform: windows ) {
+      .titlebar-buttonbox-container {
+        top: 0 !important;
+        right: 0 !important;
+      }
+      #navigator-toolbox {
+        margin-right: 138px !important;
+      }
+    }
+
+    @media (-moz-platform: linux) {
+      @media (-moz-gtk-csd-minimize-button) or (-moz-gtk-csd-maximize-button) or (-moz-gtk-csd-close-button) {
+        --gtk-window-button-width: 36px;
+        @media (-moz-bool-pref: "uc.tweak.extra-thin-nav-bar") {
+          &[uidensity=compact] {
+            --gtk-window-button-width: 32px;
+          }
+        }
+      }
+      @media ((-moz-gtk-csd-minimize-button) and (-moz-gtk-csd-maximize-button)) or 
+      ((-moz-gtk-csd-minimize-button) and (-moz-gtk-csd-close-button)) or
+      ((-moz-gtk-csd-maximize-button) and (-moz-gtk-csd-close-button)) {
+        --gtk-window-button-width: 66px;
+        @media (-moz-bool-pref: "uc.tweak.extra-thin-nav-bar") {
+          &[uidensity=compact] {
+            --gtk-window-button-width: 60px;
+          }
+        }
+      }
+
+      @media (-moz-gtk-csd-minimize-button) and (-moz-gtk-csd-maximize-button) and (-moz-gtk-csd-close-button) {
+        --gtk-window-button-width: 96px;
+        @media (-moz-bool-pref: "uc.tweak.extra-thin-nav-bar") {
+          &[uidensity=compact] {
+            --gtk-window-button-width: 84px;
+          }
+        }
+      }       
+
+      @media not (-moz-gtk-csd-reversed-placement) {
+        #navigator-toolbox { margin-right: var(--gtk-window-button-width) !important; }
+        .titlebar-buttonbox-container { right: 0; }
+      }
+      @media (-moz-gtk-csd-reversed-placement) {
+        #navigator-toolbox { margin-left: var(--gtk-window-button-width) !important; }
+        .titlebar-buttonbox-container { left: 0; }
+      }
+
+    }}

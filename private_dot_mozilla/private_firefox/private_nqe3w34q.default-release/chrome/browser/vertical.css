@@ -1,0 +1,49 @@
+/*
+* This Source Code Form is subject to the terms of the Mozilla Public
+* License, v. 2.0. If a copy of the MPL was not distributed with this
+* file, You can obtain one at https://mozilla.org/MPL/2.0/.
+*/
+
+@media (-moz-bool-pref: "uc.tweak.left-vertical-nav") or (-moz-bool-pref: "uc.tweak.right-vertical-nav") {
+
+  body {
+    @media (-moz-bool-pref: "uc.tweak.left-vertical-nav") {
+      flex-direction: row !important;
+    } @media (-moz-bool-pref: "uc.tweak.right-vertical-nav") {
+      flex-direction: row-reverse !important;
+    }
+  }
+
+  .titlebar-spacer[type="pre-tabs"],
+  .titlebar-spacer[type="post-tabs"] {
+    display: none;
+  }
+
+  slot {
+    display: block !important;
+    /*         max-height: 95vh; */
+    overflow: scroll !important;
+  }
+
+  #navigator-toolbox {
+    margin-block: var(--user-margin) !important;
+    width: var(--user-sidebar-width) !important;
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    max-height: calc(100vh - var(--user-margin)*2)
+  }
+
+  #TabsToolbar-customization-target {
+    align-self: flex-start !important;
+    height: 100% !important;
+  }
+
+  #titlebar {
+    align-self: flex-start !important;
+    flex-grow: 0 !important;
+  }
+
+  #tabbrowser-tab {
+    margin-inline-start: 0px !important;
+  }
+}
