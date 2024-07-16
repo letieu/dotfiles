@@ -4,20 +4,26 @@
 if [ $# -eq 0 ]; then
     # If no arguments provided, show unstaged changes
     selected=$(git diff --name-status | fzf --preview "git diff -- {2}" --preview-window=right:70%)
-    git diff -- $(echo $selected | cut -d' ' -f2)
+    if [ $? -eq 0 ]; then
+      git diff -- $(echo $selected | cut -d' ' -f2)
+    fi
     exit 0
 elif [ $# -eq 1 ]; then
     # If one argument provided, compare with current state
     commit1=$1
     selected=$(git diff $commit1 --name-status | fzf --preview "git diff $commit1 -- {2}" --preview-window=right:70%)
-    git diff $commit1 -- $(echo $selected | cut -d' ' -f2)
+    if [ $? -eq 0 ]; then
+      git diff $commit1 -- $(echo $selected | cut -d' ' -f2)
+    fi
     exit 0
 elif [ $# -eq 2 ]; then
     # If two arguments provided, compare the two commits
     commit1=$1
     commit2=$2
     selected=$(git diff $commit1 $commit2 --name-status | fzf --preview "git diff $commit1 $commit2 -- {2}" --preview-window=right:70%)
-    git diff $commit1 $commit2 -- $(echo $selected | cut -d' ' -f2)
+    if [ $? -eq 0 ]; then
+      git diff $commit1 $commit2 -- $(echo $selected | cut -d' ' -f2)
+    fi
     exit 0
 else
     echo "Usage:"
