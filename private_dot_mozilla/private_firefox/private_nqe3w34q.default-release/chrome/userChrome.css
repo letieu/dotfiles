@@ -61,7 +61,7 @@ tab:nth-child(5) .tab-label::before,
 tab:nth-child(6) .tab-label::before,
 tab:nth-child(7) .tab-label::before,
 tab:nth-child(8) .tab-label::before {
-    color: white;
+    color: var(--user-fg);
     content: counter(tab-counter) "";
     counter-increment: tab-counter;
     display: block;

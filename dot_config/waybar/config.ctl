@@ -13,7 +13,7 @@
 0|32|top||( custom/power ) ( tray battery ) ( wlr/taskbar idle_inhibitor clock ) ( custom/cliphist ) ( custom/wbar ) ( custom/wallchange ) ( custom/theme )|
 0|32|right||( custom/power ) ( tray battery ) ( wlr/taskbar idle_inhibitor clock ) ( custom/cliphist ) ( custom/wbar ) ( custom/wallchange ) ( custom/theme )|
 0|31|bottom|( cpu memory custom/cpuinfo custom/gpuinfo ) ( idle_inhibitor clock ) ( hyprland/workspaces )|( wlr/taskbar )|( backlight network pulseaudio pulseaudio#microphone custom/updates custom/keybindhint ) ( tray battery ) ( custom/wallchange custom/theme custom/wbar custom/power )
-1|15|top| ( idle_inhibitor clock ) ( wlr/taskbar  )|( hyprland/workspaces )|( backlight pulseaudio pulseaudio#microphone ) ( tray battery )
+1|5|top| ( clock ) ( wlr/taskbar  )|( hyprland/workspaces )|( backlight pulseaudio pulseaudio#microphone ) ( tray battery )
 0|29|bottom|( wlr/taskbar mpris )|( idle_inhibitor clock )|( backlight network pulseaudio pulseaudio#microphone custom/updates ) ( tray battery ) ( custom/wallchange custom/theme custom/wbar custom/cliphist custom/power )
 0|29|left|( wlr/taskbar mpris )|( idle_inhibitor clock )|( backlight network pulseaudio pulseaudio#microphone custom/updates ) ( tray battery ) ( custom/wallchange custom/theme custom/wbar custom/cliphist custom/power )
 0|29|top|( wlr/taskbar mpris )|( idle_inhibitor clock )|( backlight network pulseaudio pulseaudio#microphone custom/updates ) ( tray battery ) ( custom/wallchange custom/theme custom/wbar custom/cliphist custom/power )

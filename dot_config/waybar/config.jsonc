@@ -6,7 +6,7 @@
     "layer": "top",
     "position": "top",
     "mod": "dock",
-    "height": 15,
+    "height": 5,
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
@@ -15,21 +15,12 @@
 
 // positions generated based on config.ctl //
 
-	"modules-left": ["custom/padd","","custom/l_end","idle_inhibitor","clock","custom/r_end","custom/l_end","wlr/taskbar","","custom/r_end","custom/padd"],
+	"modules-left": ["custom/padd","","custom/l_end","clock","custom/r_end","custom/l_end","wlr/taskbar","","custom/r_end","custom/padd"],
 	"modules-center": ["custom/padd","custom/l_end","hyprland/workspaces","custom/r_end","custom/padd"],
 	"modules-right": ["custom/padd","custom/l_end","backlight","pulseaudio","pulseaudio#microphone","custom/r_end","custom/l_end","tray","battery","custom/r_end","custom/padd"],
 
 
 // sourced from modules based on config.ctl //
-
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "rotate": 0,
-        "format-icons": {
-            "activated": "󰥔",
-            "deactivated": ""
-        }
-    },
 
     "clock": {
         "format": "{:%I:%M %p}",
@@ -60,7 +51,7 @@
 		"format": "{icon}",
 		"rotate": 0,
 		"icon-size": 16,
-		"icon-theme": "Tela-circle-purple",
+		"icon-theme": "Tela-circle-grey",
         "spacing": 0,
 		"tooltip-format": "{title}",
 		"on-click": "activate",
@@ -190,7 +181,7 @@
     },
 
     "custom/padd": {
-        "format": "  ",
+        "format": "",
         "interval" : "once",
         "tooltip": false
     }

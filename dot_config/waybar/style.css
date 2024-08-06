@@ -16,15 +16,15 @@ window#waybar {
 tooltip {
     background: @main-bg;
     color: @main-fg;
-    border-radius: 3px;
+    border-radius: 0px;
     border-width: 0px;
 }
 
 #workspaces button {
     box-shadow: none;
-	text-shadow: none;
+	  text-shadow: none;
     padding: 0px;
-    border-radius: 4px;
+    border-radius: 0px;
     margin-top: 1px;
     margin-bottom: 1px;
     margin-left: 0px;
@@ -39,25 +39,25 @@ tooltip {
     background: @wb-act-bg;
     color: @wb-act-fg;
     margin-left: 1px;
-    padding-left: 6px;
-    padding-right: 6px;
+    padding-left: 1px;
+    padding-right: 1px;
     margin-right: 1px;
     animation: ws_active 20s ease-in-out 1;
-    transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
+    transition: all 0.1s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
 #workspaces button:hover {
     background: @wb-hvr-bg;
     color: @wb-hvr-fg;
     animation: ws_hover 20s ease-in-out 1;
-    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+    transition: all 0.1s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
 #taskbar button {
     box-shadow: none;
-	text-shadow: none;
+  	text-shadow: none;
     padding: 0px;
-    border-radius: 4px;
+    border-radius: 0px;
     margin-top: 1px;
     margin-bottom: 1px;
     margin-left: 0px;
@@ -72,8 +72,8 @@ tooltip {
     background: @wb-act-bg;
     color: @wb-act-color;
     margin-left: 1px;
-    padding-left: 6px;
-    padding-right: 6px;
+    padding-left: 1px;
+    padding-right: 1px;
     margin-right: 1px;
     animation: tb_active 20s ease-in-out 1;
     transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
@@ -129,9 +129,9 @@ tooltip {
     color: @main-fg;
     background: @main-bg;
     opacity: 1;
-    margin: 2px 0px 2px 0px;
-    padding-left: 2px;
-    padding-right: 2px;
+    margin: 1px 0px 1px 0px;
+    padding-left: 1px;
+    padding-right: 1px;
 }
 
 #workspaces,
@@ -140,37 +140,37 @@ tooltip {
 }
 
 #custom-r_end {
-    border-radius: 0px 10px 10px 0px;
-    margin-right: 4px;
+    border-radius: 0px 0px 0px 0px;
+    margin-right: 1px;
     padding-right: 0px;
 }
 
 #custom-l_end {
-    border-radius: 10px 0px 0px 10px;
-    margin-left: 4px;
+    border-radius: 0px 0px 0px 0px;
+    margin-left: 1px;
     padding-left: 0px;
 }
 
 #custom-sr_end {
     border-radius: 0px;
-    margin-right: 4px;
+    margin-right: 1px;
     padding-right: 0px;
 }
 
 #custom-sl_end {
     border-radius: 0px;
-    margin-left: 4px;
+    margin-left: 1px;
     padding-left: 0px;
 }
 
 #custom-rr_end {
-    border-radius: 0px 3px 3px 0px;
-    margin-right: 4px;
+    border-radius: 0px 0px 0px 0px;
+    margin-right: 1px;
     padding-right: 0px;
 }
 
 #custom-rl_end {
-    border-radius: 3px 0px 0px 3px;
-    margin-left: 4px;
+    border-radius: 0px 0px 0px 0px;
+    margin-left: 1px;
     padding-left: 0px;
 }

@@ -17,10 +17,14 @@ fish_add_path -g -p /usr/bin/flutter/bin
 # Aliases
 alias h="Hyprland"
 alias v="nvim"
+alias lg='v "+lua require(\'gitgraph\').draw({}, { all = true, max_count = 5000 })"'
 
 fish_vi_key_bindings
 
 zoxide init fish | source
 nvm use lts --silent
 
+# Dark
+#fish_config theme choose "Catppuccin Mocha"
+# Light
 fish_config theme choose "Catppuccin Latte"
