@@ -26,13 +26,15 @@ sudo pacman -S xdg-utils
 sudo pacman -S fcitx5 fcitx5-qt fcitx5-gtk fcitx5-unikey fcitx5-config-qt
 sudo pacman -S xdg-desktop-portal-wlr
 sudo pacman -S openssh
+sudo pacman -S swappy
 
 # history search --contains "yay -S"
-yay -S ttf-jetbrains-mono-nerd
+yay -S hyprland-git
 yay -S chezmoi
 yay -S kitty-git
 yay -S auto-cpufreq
-yay -S hyprland-git
+yay -S ttf-jetbrains-mono-nerd
+yay -S grimblast
 ```
 
 - Neovim [config](https://github.com/letieu/nvim-config)
