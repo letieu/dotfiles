@@ -18,6 +18,7 @@ set PATH ~/.local/bin $PATH
 alias h="Hyprland"
 alias v="nvim"
 alias lg='v "+lua require(\'gitgraph\').draw({}, { all = true, max_count = 5000 })"'
+alias icat='kitten icat'
 
 fish_vi_key_bindings
 
