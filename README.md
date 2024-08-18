@@ -1,3 +1,5 @@
+
+## Install package
 ```bash
 # list package installed
 # history | grep 'sudo pacman -S'
@@ -6,6 +8,7 @@ sudo pacman -S hyprland
 sudo pacman -S --needed base-devel git
 sudo pacman -S htop
 sudo pacman -S auto-cpufreq
+sudo pacman -S neovim
 sudo pacman -S kitty
 sudo pacman -S firefox
 sudo pacman -S bemenu
@@ -37,4 +40,10 @@ yay -S ttf-jetbrains-mono-nerd
 yay -S grimblast
 ```
 
+## Apply config
+```bash
+chezmoi init --apply letieu
+```
+
+## Neovim
 - Neovim [config](https://github.com/letieu/nvim-config)
