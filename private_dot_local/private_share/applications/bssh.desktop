@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Exec=/usr/bin/bssh
+Terminal=false
+Type=Application
+Icon=network-wired
+Categories=GNOME;Network;
+StartupNotify=false
+NoDisplay=true

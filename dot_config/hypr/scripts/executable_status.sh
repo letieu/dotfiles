@@ -21,8 +21,9 @@ ip_address=$(ip -o -4 addr show up primary scope global | awk '{print $4}' | cut
 network_name=$(nmcli -t -f active,ssid dev wifi | grep -E '^yes' | cut -d: -f2)
 
 # Combine information with Nerd Font icons
-status="  $current_time \n   $current_date \n    $battery \n     $network_name \n   $ip_address"
+status="  $current_time \n   $current_date \n    $battery \n     $network_name \n   $ip_address"
 
 # Kill the loading message and display the actual status
 pkill -f "$menu_cmd"
+
 echo -e "$status" | $menu_cmd

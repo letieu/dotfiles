@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Exec=/usr/bin/avahi-discover
+Terminal=false
+Type=Application
+Icon=network-wired
+Categories=GNOME;System;
+StartupNotify=false
+NoDisplay=true

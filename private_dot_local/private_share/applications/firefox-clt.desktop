@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Firefox CLT
+GenericName=Firefox CLT
+TryExec=firefox -p CLT
+StartupNotify=true
+Exec=firefox -p CLT
+Icon=firefox

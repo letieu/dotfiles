@@ -27,6 +27,9 @@ END {
     }
 }')
 
+# sort the workspaces by ID
+menu_items=$(echo "$menu_items" | sort -n)
+
 # Show the menu and get the selected workspace
 selected=$(echo "$menu_items" | $menu_cmd | awk '{print $1}')
 
