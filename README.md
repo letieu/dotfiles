@@ -30,6 +30,7 @@ sudo pacman -S fcitx5 fcitx5-qt fcitx5-gtk fcitx5-unikey fcitx5-config-qt
 sudo pacman -S xdg-desktop-portal-wlr
 sudo pacman -S openssh
 sudo pacman -S swappy
+sudo pacman -S mako libnotify
 
 # history search --contains "yay -S"
 yay -S hyprland-git
