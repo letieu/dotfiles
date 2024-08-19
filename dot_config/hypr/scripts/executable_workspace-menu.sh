@@ -3,13 +3,20 @@
 # Get the list of workspaces
 workspaces=$(hyprctl workspaces)
 
+# Get the current workspace ID
+current_workspace=$(hyprctl activeworkspace | awk '/workspace ID/ {print $3}')
+
 menu_cmd='bemenu -p 󰯉 -i -c -W 0.6 -H 30 --hp 5 --fn JetBrainsMono Nerd Font Mono -B 2'
 
 # Parse the workspaces and format them for dmenu
-menu_items=$(echo "$workspaces" | awk '
+menu_items=$(echo "$workspaces" | awk -v current="$current_workspace" '
 /workspace ID/ {
     if (id) {
-        print "[" id "] " title " (" windows ")"
+        if (id == current) {
+            print "[" id "] " title " (" windows ") *"
+        } else {
+            print "[" id "] " title " (" windows ")"
+        }
     }
     id = $3
     title = ""
@@ -23,7 +30,11 @@ menu_items=$(echo "$workspaces" | awk '
 }
 END {
     if (id) {
-        print "[" id "] " title " (" windows ")"
+        if (id == current) {
+            print "[" id "] " title " (" windows ") *"
+        } else {
+            print "[" id "] " title " (" windows ")"
+        }
     }
 }')
 
