@@ -14,7 +14,7 @@ case $selected in
         ;;
     Shutdown)
         hyprctl notify 1 2000 "rgb(ff0000)" "  Shutting down... "
-        shutdown
+        shutdown now
         ;;
     Reboot)
         hyprctl notify 1 2000 "rgb(00ff00)" "  Rebooting... "

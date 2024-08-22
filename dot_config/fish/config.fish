@@ -24,3 +24,5 @@ fish_vi_key_bindings
 
 zoxide init fish | source
 nvm use lts --silent
+
+source ~/.config/fish/theme.fish

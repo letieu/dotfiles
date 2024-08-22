@@ -1,8 +1,8 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=Wifi 
-GenericName=Wifi 
+Name=Wifi   
+GenericName=Wifi   
 Exec=bash -c /home/$USER/scripts/wifi.sh
 Terminal=true
 StartupNotify=false

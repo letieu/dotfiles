@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Win 11 
+GenericName=Win 11 
+Exec=bash -c /home/$USER/scripts/win11.sh
+Terminal=false

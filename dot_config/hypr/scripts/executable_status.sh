@@ -5,14 +5,16 @@ menu_cmd='bemenu -p  -i -c -W 0.6 -H 30 --hp 5 --fn JetBrainsMono Nerd Font M
 # Display loading message
 echo -e "Loading..." | $menu_cmd &
 
-# Get battery status
-battery=$(acpi -b | awk '{print $4}' | tr -d ',')
-
 # Get current date
 current_date=$(date +"%Y-%m-%d")
 
 # Get current time
-current_time=$(date +"%H:%M:%S")
+current_time=$(date +"%H:%M")
+
+hyprctl notify 1 3000 "rgb(00ff00)" "  $current_time"
+
+# Get battery status
+battery=$(acpi -b | awk '{print $4}' | tr -d ',')
 
 # Get IP address
 ip_address=$(ip -o -4 addr show up primary scope global | awk '{print $4}' | cut -d/ -f1)
