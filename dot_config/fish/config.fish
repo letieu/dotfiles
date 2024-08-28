@@ -13,6 +13,7 @@ set -x GOOGLE_CLOUD_SDK_HOME $CLOUDSDK_ROOT_DIR
 set PATH ~/.cargo/bin $PATH
 set PATH ~/go/bin $PATH
 set PATH ~/.local/bin $PATH
+set PATH ~/scripts $PATH
 
 # Aliases
 alias h="Hyprland"
