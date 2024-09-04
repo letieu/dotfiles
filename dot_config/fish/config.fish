@@ -18,8 +18,9 @@ set PATH ~/scripts $PATH
 # Aliases
 alias h="Hyprland"
 alias v="nvim"
-alias lg='v "+lua require(\'gitgraph\').draw({}, { all = true, max_count = 5000 })"'
 alias icat='kitten icat'
+alias lg='v "+lua require(\'gitgraph\').draw({}, { all = true, max_count = 5000 })"'
+alias cpl='v "+lua require(\'CopilotChat\').toggle()"'
 
 fish_vi_key_bindings
 
