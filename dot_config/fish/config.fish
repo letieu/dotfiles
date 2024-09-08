@@ -26,6 +26,6 @@ fish_vi_key_bindings
 
 zoxide init fish | source
 
-source ~/.config/fish/theme.fish
+source $__fish_config_dir/themes/kanagawa.fish
 
 __check_nvm
