@@ -1,8 +1,8 @@
 [Desktop Entry]
 Type=Application
-Name=Termux
-Exec=waydroid app launch com.termux
-Icon=/home/tieu/.local/share/waydroid/data/icons/com.termux.png
+Name=Termux:Tasker
+Exec=waydroid app launch com.termux.tasker
+Icon=/home/tieu/.local/share/waydroid/data/icons/com.termux.tasker.png
 Categories=X-WayDroid-App;
 X-Purism-FormFactor=Workstation;Mobile;
 Actions=app_settings;
@@ -10,5 +10,5 @@ NoDisplay=true
 
 [Desktop Action app_settings]
 Name=App Settings
-Exec=waydroid app intent android.settings.APPLICATION_DETAILS_SETTINGS package:com.termux
+Exec=waydroid app intent android.settings.APPLICATION_DETAILS_SETTINGS package:com.termux.tasker
 Icon=/home/tieu/.local/share/waydroid/data/icons/com.android.settings.png
