@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+# vim:ft=bash
+systemctl stop docker docker.socket
+systemctl restart iptables
+ip link delete docker0

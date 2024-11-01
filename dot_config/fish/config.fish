@@ -2,6 +2,7 @@ set fish_greeting
 
 # Environment
 set -x EDITOR "nvim"
+set -x FORCE_COLOR true
 
 set -x CLOUDSDK_ROOT_DIR /opt/google-cloud-cli
 set -x CLOUDSDK_PYTHON /usr/bin/python
