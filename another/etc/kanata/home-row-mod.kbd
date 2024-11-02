@@ -10,14 +10,14 @@
   process-unmapped-keys yes
 )
 (defsrc
-  a   s   d   f   j   k   l   ;
+  a   s   d   f   j   k   l   ;  lalt ralt
 )
 (defvar
   ;; Note: consider using different time values for your different fingers.
   ;; For example, your pinkies might be slower to release keys and index
   ;; fingers faster.
   tap-time 200
-  hold-time 300
+  hold-time 150
 
   left-hand-keys (
     q w e r t
@@ -31,11 +31,11 @@
   )
 )
 (deflayer base
-  @a  @s  @d  @f  @j  @k  @l  @;
+  @a  @s  @d  @f  @j  @k  @l  @; @lalt @ralt
 )
 
 (deflayer nomods
-  a   s   d   f   j   k   l   ;
+  a   s   d   f   j   k   l   ; lalt ralt
 )
 (deffakekeys
   to-base (layer-switch base)
@@ -54,4 +54,6 @@
   k (tap-hold-release-keys $tap-time $hold-time (multi k @tap) rctl $right-hand-keys)
   ; (tap-hold-release-keys $tap-time $hold-time (multi ; @tap) ralt $right-hand-keys)
   l (tap-hold-release-keys $tap-time $hold-time (multi l @tap) rmet $right-hand-keys)
+  lalt (tap-hold 200 200 enter enter)
+  ralt (tap-hold 200 200 enter enter)
 )

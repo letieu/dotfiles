@@ -5,8 +5,9 @@ After=local-fs.target
 
 [Service]
 ExecStartPre=/usr/bin/modprobe uinput
-ExecStart=/usr/bin/kanata -c /etc/kanata/home-row-mod.kbd
+ExecStart=/home/tieu/.cargo/bin/kanata -c /etc/kanata/home-row-mod.kbd
 Restart=no
+
 
 [Install]
 WantedBy=sysinit.target
