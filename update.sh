@@ -16,7 +16,4 @@ add ~/scripts
 add ~/.local/share/applications
 add ~/.mozilla/firefox/tieu/chrome
 
-cp /etc/systemd/system/kanata.service another/etc/systemd/system/kanata.service
-cp /etc/kanata/home-row-mod.kbd another/etc/kanata/home-row-mod.kbd 
-
 git status
