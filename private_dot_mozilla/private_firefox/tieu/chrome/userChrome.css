@@ -6,8 +6,8 @@
 	--urlbar-focused-bg-color: white;
 	--urlbar-not-focused-bg-color: #1c1b22;
 	--toolbar-bgcolor: white !important;
-	--tab-font: 'Jetbrains Mono';
-	--urlbar-font: 'Jetbrains Mono';
+	--tab-font: 'Monaspace Radon';
+	--urlbar-font: 'Monaspace Neon';
 
 	/* try increasing if you encounter problems */
 	--urlbar-height-setting: 24px;
@@ -71,7 +71,7 @@ toolbar .toolbarbutton-1 { padding: 0 0 !important; }
 	padding-top: 0 !important;
 	padding-bottom: 0 !important;
 	font-family: var(--urlbar-font, 'monospace');
-	font-size: 11px;
+	font-size: 14px;
 }
 
 #urlbar {
@@ -292,4 +292,10 @@ tab:nth-child(8) .tab-label::before {
     top: 0.35em;
     vertical-align: middle;
     width: 1.4em;
+}
+
+#urlbar[breakout][breakout-extend] {
+  width: 500px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
 }
