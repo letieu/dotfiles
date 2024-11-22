@@ -29,7 +29,6 @@ start_postgres_container
 echo "Starting Kafka Docker Compose..."
 (cd ~/code/ONE/utils/kafka && docker-compose up -d)
 
-# Make sure kafka is up and running before starting the services
 sleep 5
 
 # Run opa-mock script

@@ -6,7 +6,7 @@
 	--urlbar-focused-bg-color: white;
 	--urlbar-not-focused-bg-color: #1c1b22;
 	--toolbar-bgcolor: white !important;
-	--tab-font: 'Monaspace Radon';
+	--tab-font: 'Monaspace Neon';
 	--urlbar-font: 'Monaspace Neon';
 
 	/* try increasing if you encounter problems */
@@ -295,7 +295,7 @@ tab:nth-child(8) .tab-label::before {
 }
 
 #urlbar[breakout][breakout-extend] {
-  width: 500px !important;
+  width: 700px !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
 }

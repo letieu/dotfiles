@@ -57,6 +57,9 @@ if [ "$confirm" = "y" ]; then
 
         echo "hyprctl hyprpaper wallpaper $monitor, $image_path"
         hyprctl hyprpaper wallpaper "$monitor, $image_path"
+
+        # move to use.png for persistent
+        cp $image_path ~/.config/hypr/wallpapers/use.png
     else
         echo "Image file does not exist: $image_path"
     fi
