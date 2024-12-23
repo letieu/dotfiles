@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=true
+Exec="ls"
+Exec=fish -c "v ~/note/todo.md"
+Name=Todo
+Comment=Todo
+Categories=ConsoleOnly;System;

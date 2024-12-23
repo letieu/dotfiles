@@ -3,11 +3,11 @@
 	--tab-inactive-bg-color: #333;
 	--tab-active-fg-fallback-color: #eee;		/* color of text in an active tab without a container */
 	--tab-inactive-fg-fallback-color: #888;		/* color of text in an inactive tab without a container */
-	--urlbar-focused-bg-color: white;
+	--urlbar-focused-bg-color: #41404c;
 	--urlbar-not-focused-bg-color: #1c1b22;
-	--toolbar-bgcolor: white !important;
-	--tab-font: 'Monaspace Neon';
-	--urlbar-font: 'Monaspace Neon';
+	--toolbar-bgcolor: #2b2a33 !important;
+	--tab-font: 'Jetbrains Mono';
+	--urlbar-font: 'Jetbrains Mono';
 
 	/* try increasing if you encounter problems */
 	--urlbar-height-setting: 24px;
@@ -22,6 +22,7 @@
 	--toolbar-field-focus-background-color: var(--urlbar-focused-bg-color) !important;
 	--toolbar-field-background-color: var(--urlbar-not-focused-bg-color) !important;
 	--toolbar-field-focus-border-color: transparent !important;
+	--toolbar-field-color: #f00 !important;
 }
 
 /* --- GENERAL DEBLOAT ---------------------------------- */
@@ -48,6 +49,7 @@ menupopup > #context-sep-navigation { display: none !important; }
 #fxa-toolbar-menu-button { display: none; }
 /* empty space before and after the url bar */
 #customizableui-special-spring1, #customizableui-special-spring2 { display: none; }
+.private-browsing-indicator-with-label { display: none; }
 
 /* --- STYLE NAVBAR ------------------------------------ */
 
@@ -71,7 +73,7 @@ toolbar .toolbarbutton-1 { padding: 0 0 !important; }
 	padding-top: 0 !important;
 	padding-bottom: 0 !important;
 	font-family: var(--urlbar-font, 'monospace');
-	font-size: 14px;
+	font-size: 11px;
 }
 
 #urlbar {
@@ -173,6 +175,17 @@ tab {
 	font-family: var(--tab-font, monospace);
 	font-weight: bold;
 	border: none !important;
+	padding-top: 0 !important;
+}
+
+.tab-content {
+	padding: 0 0 0 var(--tab-inline-padding);
+}
+
+.tab-background {
+	margin-block: 0 !important;
+	min-height: var(--tab-min-height);
+	outline-offset: 0 !important;
 }
 
 /* safari style tab width */
@@ -233,6 +246,10 @@ tab {
 	height: var(--tab-min-height) !important;
 }
 
+#tabbrowser-tabs {
+	min-height: var(--tab-min-height) !important;
+}
+
 /* remove overflow scroll buttons */
 #scrollbutton-up, #scrollbutton-down { display: none !important; }
 
@@ -248,54 +265,45 @@ tab {
 
 /* --- AUTOHIDE NAVBAR ---------------------------------- */
 
-/* hide navbar unless focused */
-#nav-bar {
-	min-height: 0 !important;
-	max-height: 0 !important;
-	height: 0 !important;
+#nav-bar,
+#urlbar {
+	transform: translateY(calc(0px - var(--urlbar-height-setting)));
+	opacity: 0;
 }
 
-/* show on focus - uncomment the line below this if you want cursor hover
- * events to trigger the navbar  */
-/* #titlebar:hover ~ .browser-toolbar, #nav-bar:hover, */
+#navigator-toolbox {
+	min-height: var(--tab-min-height) !important;
+	height: var(--tab-min-height) !important;
+}
+
+#navigator-toolbox:focus-within {
+	min-height: calc(var(--urlbar-height-setting) + var(--tab-min-height)) !important;
+	height: calc(var(--urlbar-height-setting) + var(--tab-min-height)) !important;
+	transform: translateY(calc(0px - var(--tab-min-height)));
+}
+
+#TabsToolbar {
+	transform: translateY(var(--tab-min-height));
+}
+
 #nav-bar:focus-within {
-	max-height: var(--urlbar-height-setting) !important;
-	height: var(--urlbar-height-setting) !important;
-	min-height: var(--urlbar-height-setting) !important;
+	transform: translateY(var(--tab-min-height));
+	opacity: 1;
 }
 
-
-tabs {
-    counter-reset: tab-counter;
-}
-tab:nth-child(1) .tab-label::before,
-tab:nth-child(2) .tab-label::before,
-tab:nth-child(3) .tab-label::before,
-tab:nth-child(4) .tab-label::before,
-tab:nth-child(5) .tab-label::before,
-tab:nth-child(6) .tab-label::before,
-tab:nth-child(7) .tab-label::before,
-tab:nth-child(8) .tab-label::before {
-    color: var(--user-fg);
-    content: counter(tab-counter) "";
-    counter-increment: tab-counter;
-    display: block;
-    float: left;
-    font-size: 0.8em;
-    font-weight: bold;
-    height: 1.5em;
-    line-height: 1;
-    margin: 0 0.5em 0 0;
-    padding: 0.1em 0.25em 0.25em 0.25em;
-    position: relative;
-    text-align: center;
-    top: 0.35em;
-    vertical-align: middle;
-    width: 1.4em;
+#urlbar:focus-within {
+	transform: translateY(0);
+	opacity: 1;
 }
 
 #urlbar[breakout][breakout-extend] {
   width: 700px !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
+  color: white !important;
+}
+
+#urlbar-container {
+  text-align: center;
+  color: white !important;
 }

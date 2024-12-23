@@ -30,6 +30,3 @@ zoxide init fish | source
 source $__fish_config_dir/themes/kanagawa.fish
 
 __check_nvm
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/opt/google-cloud-cli/path.fish.inc' ]; . '/opt/google-cloud-cli/path.fish.inc'; end
