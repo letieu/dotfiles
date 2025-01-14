@@ -15,6 +15,7 @@ set PATH ~/.cargo/bin $PATH
 set PATH ~/go/bin $PATH
 set PATH ~/.local/bin $PATH
 set PATH ~/scripts $PATH
+set PATH ~/.local/share/nvm/v22.12.0/bin $PATH
 
 # Aliases
 alias h="Hyprland"
