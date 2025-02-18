@@ -11,11 +11,12 @@ set -x PATH $CLOUDSDK_ROOT_DIR/bin $PATH
 set -x GOOGLE_CLOUD_SDK_HOME $CLOUDSDK_ROOT_DIR
 
 # PATH
-set PATH ~/.cargo/bin $PATH
-set PATH ~/go/bin $PATH
-set PATH ~/.local/bin $PATH
-set PATH ~/scripts $PATH
-set PATH ~/.local/share/nvm/v22.12.0/bin $PATH
+set -U fish_user_paths ~/.cargo/bin
+set -U fish_user_paths ~/go/bin
+set -U fish_user_paths ~/.local/bin
+set -U fish_user_paths ~/scripts
+set -U fish_user_paths ~/.local/share/nvm/v22.12.0/bin
+set -U fish_user_paths /nix/var/nix/profiles/default/bin
 
 # Aliases
 alias h="Hyprland"
