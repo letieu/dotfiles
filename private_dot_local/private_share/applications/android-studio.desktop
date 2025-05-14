@@ -1,0 +1,7 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Android Studio
+GenericName=Android Studio
+# Exec=JAVA_HOME=/opt/android-studio/jbr/ bash -c /opt/android-studio/bin/studio
+Exec=env JAVA_HOME=/opt/android-studio/jbr/ bash -c "/opt/android-studio/bin/studio"

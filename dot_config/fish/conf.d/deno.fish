@@ -1,0 +1,1 @@
+source "/home/tieu/.deno/env.fish"
