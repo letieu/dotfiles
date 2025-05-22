@@ -34,8 +34,7 @@ fish_vi_key_bindings
 
 zoxide init fish | source
 
-# source $__fish_config_dir/themes/kanagawa.fish
-fish_config theme choose "Rosé Pine Dawn"
+fish_config theme choose "Catppuccin Frappe"
 
 __check_nvm
 
@@ -54,3 +53,5 @@ end
 set -Ux PYENV_ROOT $HOME/.pyenv
 set -Ux PATH $PYENV_ROOT/bin $PATH
 status --is-interactive; and source (pyenv init -|psub)
+
+direnv hook fish | source
