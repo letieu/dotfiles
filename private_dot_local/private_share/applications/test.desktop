@@ -1,0 +1,17 @@
+[Desktop Entry]
+Name=Test
+GenericName=Terminal entering Test
+Comment=Terminal entering Test
+Categories=Distrobox;System;Utility
+Exec=/usr/bin/distrobox enter  test
+Icon=/home/tieu/.local/share/icons/distrobox/fedora.png
+Keywords=distrobox;
+NoDisplay=false
+Terminal=true
+TryExec=/usr/bin/distrobox
+Type=Application
+Actions=Remove;
+
+[Desktop Action Remove]
+Name=Remove Test from system
+Exec=/usr/bin/distrobox rm  test

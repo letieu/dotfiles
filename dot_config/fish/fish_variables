@@ -1,6 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR --export --path PATH:/home/tieu/\x2epyenv/bin\x1e/home/tieu/\x2ecabal/bin\x1e/home/tieu/\x2eghcup/bin\x1e/home/tieu/node_modules/\x2ebin\x1e/home/tieu/Android/Sdk/platform\x2dtools\x1e/home/tieu/\x2elocal/share/nvm/v22\x2e12\x2e0/bin\x1e/home/tieu/scripts\x1e/home/tieu/\x2elocal/bin\x1e/home/tieu/go/bin\x1e/home/tieu/\x2enix\x2dprofile/bin\x1e/opt/android\x2dstudio/android\x2dstudio/bin/\x1e/opt/google\x2dcloud\x2dcli/bin\x1e/home/tieu/\x2epyenv/shims\x1e/home/tieu/\x2ecabal/bin\x1e/home/tieu/\x2eghcup/bin\x1e/opt/google\x2dcloud\x2dcli/bin\x1e/home/tieu/\x2elocal/share/pnpm\x1e/home/tieu/\x2ecabal/bin\x1e/home/tieu/\x2eghcup/bin\x1e/opt/google\x2dcloud\x2dcli/bin\x1e/home/tieu/\x2edeno/bin\x1e/usr/local/sbin\x1e/usr/local/bin\x1e/usr/bin\x1e/usr/bin/site_perl\x1e/usr/bin/vendor_perl\x1e/usr/bin/core_perl
+SETUVAR --export --path PATH:/home/tieu/\x2epyenv/bin\x1e/home/tieu/\x2ecabal/bin\x1e/home/tieu/\x2eghcup/bin\x1e/opt/google\x2dcloud\x2dcli/bin\x1e/home/tieu/\x2eyarn/bin\x1e/home/tieu/Android/Sdk/platform\x2dtools\x1e/home/tieu/\x2elocal/share/nvm/v22\x2e12\x2e0/bin\x1e/home/tieu/scripts\x1e/home/tieu/\x2elocal/bin\x1e/home/tieu/go/bin\x1e/opt/android\x2dstudio/android\x2dstudio/bin/\x1e/home/tieu/\x2epyenv/shims\x1e/home/tieu/\x2ecabal/bin\x1e/home/tieu/\x2eghcup/bin\x1e/opt/google\x2dcloud\x2dcli/bin\x1e/home/tieu/\x2enix\x2dprofile/bin\x1e/home/tieu/\x2elocal/share/pnpm\x1e/home/tieu/\x2ecabal/bin\x1e/home/tieu/\x2eghcup/bin\x1e/opt/google\x2dcloud\x2dcli/bin\x1e/home/tieu/\x2edeno/bin\x1e/usr/local/sbin\x1e/usr/local/bin\x1e/usr/bin\x1e/usr/bin/site_perl\x1e/usr/bin/vendor_perl\x1e/usr/bin/core_perl\x1e/usr/local/sbin\x1e/usr/local/bin\x1e/usr/sbin\x1e/usr/bin\x1e/sbin\x1e/bin\x1e/usr/sbin\x1e/sbin\x1e/bin
 SETUVAR --export PYENV_ROOT:/home/tieu/\x2epyenv
 SETUVAR __fish_initialized:3800
 SETUVAR _fisher_catppuccin_2F_fish_files:\x7e/\x2econfig/fish/themes/Catppuccin\x20Frappe\x2etheme\x1e\x7e/\x2econfig/fish/themes/Catppuccin\x20Latte\x2etheme\x1e\x7e/\x2econfig/fish/themes/Catppuccin\x20Macchiato\x2etheme\x1e\x7e/\x2econfig/fish/themes/Catppuccin\x20Mocha\x2etheme
@@ -50,5 +50,5 @@ SETUVAR fish_pager_color_selected_background:\x1d
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:/opt/android\x2dstudio/android\x2dstudio/bin/
+SETUVAR fish_user_paths:/home/tieu/\x2eyarn/bin\x1e/home/tieu/Android/Sdk/platform\x2dtools\x1e/home/tieu/\x2elocal/share/nvm/v22\x2e12\x2e0/bin\x1e/home/tieu/scripts\x1e/home/tieu/\x2elocal/bin\x1e/home/tieu/go/bin\x1e/opt/android\x2dstudio/android\x2dstudio/bin/
 SETUVAR nvm_default_version:lts
