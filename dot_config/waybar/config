@@ -3,12 +3,37 @@
   "position": "top",
   "height": 12,
   "margin": 0,
-  "modules-left": ["hyprland/workspaces"],
-  "modules-center": ["clock"],
-  "modules-right": ["cpu", "memory", "battery", "wireplumber", "network", "tray"],
+  "modules-left": [
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "cpu",
+    "memory",
+    "battery",
+    "wireplumber",
+    "network",
+    "tray"
+  ],
   "hyprland/workspaces": {
     "disable-scroll": false,
-    "on-click": "activate"
+    "on-click": "activate",
+    "format": "[{name} {windows} ]",
+    "format-window-separator": "  ",
+    "window-rewrite-default": "",
+    "window-rewrite": {
+      "class<kitty>": "",
+      "class<firefox-developer-edition>": "󰈹",
+      "class<firefox>": "󰈹",
+      "class<Chromium>": "",
+      "class<Nemo>": "",
+      "class<alacritty>": "",
+      "class<vlc>": "",
+      "class<virt-manager>": "",
+      "class<chromium>": ""
+    }
   },
   "clock": {
     "format": "{:%a %d %b  %H:%M}",
@@ -27,7 +52,13 @@
     "format": "{capacity}% {icon}",
     "format-charging": "⚡ {capacity}%",
     "format-plugged": " {capacity}%",
-    "format-icons": ["", "", "", "", ""],
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
     "tooltip": false
   },
   "network": {

@@ -1,1 +1,26 @@
 [MIME Cache]
+application/json=firefox-developer-edition.desktop;
+application/pdf=firefox-developer-edition.desktop;
+application/rdf+xml=firefox-developer-edition.desktop;
+application/rss+xml=firefox-developer-edition.desktop;
+application/x-xpinstall=firefox-developer-edition.desktop;
+application/xhtml+xml=firefox-developer-edition.desktop;
+application/xml=firefox-developer-edition.desktop;
+audio/flac=firefox-developer-edition.desktop;
+audio/ogg=firefox-developer-edition.desktop;
+audio/webm=firefox-developer-edition.desktop;
+image/avif=firefox-developer-edition.desktop;
+image/gif=firefox-developer-edition.desktop;
+image/jpeg=firefox-developer-edition.desktop;
+image/png=firefox-developer-edition.desktop;
+image/svg+xml=firefox-developer-edition.desktop;
+image/webp=firefox-developer-edition.desktop;
+text/html=firefox-developer-edition.desktop;
+text/xml=firefox-developer-edition.desktop;
+video/ogg=firefox-developer-edition.desktop;
+video/webm=firefox-developer-edition.desktop;
+x-scheme-handler/application=kitty.desktop;
+x-scheme-handler/chrome=firefox-developer-edition.desktop;
+x-scheme-handler/http=firefox-developer-edition.desktop;
+x-scheme-handler/https=firefox-developer-edition.desktop;
+x-scheme-handler/mailto=firefox-developer-edition.desktop;
