@@ -16,5 +16,6 @@ add ~/scripts
 add ~/.local/share/applications
 add ~/.mozilla/firefox/tieu/chrome
 add ~/.config/hypr
+add ~/.config/waybar
 
 git status
