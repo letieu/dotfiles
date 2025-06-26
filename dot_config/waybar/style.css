@@ -1,39 +1,29 @@
+@import "./rose-pine.css";
+
 * {
   border: none;
   font-family: "JetBrainsMono Nerd Font", "Cascadia Code", "Roboto", sans-serif;
-  font-size: 11px;
-  color: #222;
-  background: transparent;
+  font-size: 16px;
+  color: @text;
+  background: @base;
 }
 
 window#waybar {
-  background-color: rgba(245, 245, 245, 0.15);
+  background-color: @overlay;
   border: 1px solid rgba(200, 200, 200, 0.2);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   margin: 0;
   padding: 0px 1px;
 }
 
-#workspaces button {
-  font-size: 9px;
-  padding: 0 3px;
-  margin: 0 0px;
-  min-height: 0px;
-  border-radius: 0;
-  background-color: rgba(255, 255, 255, 0.15);
-}
-
-#workspaces button.active {
-  background-color: rgba(255, 255, 255, 0.4);
-  color: #000;
-}
-
-#clock, #cpu, #memory, #battery, #wireplumber, #network {
+#clock,
+#cpu,
+#memory,
+#battery,
+#wireplumber,
+#network {
   padding: 0 6px;
-  margin: 0 2px;
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(200, 200, 200, 0.15);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  background-color: @surface;
 }
 
 #clock {
@@ -41,22 +31,56 @@ window#waybar {
 }
 
 #battery {
-  color: #005200;
+  color: @iris;
 }
 
 #battery.warning {
-  color: #ffa500;
+  color: @gold;
 }
 
 #battery.critical {
-  color: #ff0000;
+  color: @love;
 }
 
 #tray {
   padding: 0 6px;
   margin: 0 2px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: @surface;
   border-radius: 0px;
-  border: 1px solid rgba(200, 200, 200, 0.15);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: none;
+}
+
+#workspaces {
+  background-color: @surface;
+  border: none;
+  box-shadow: none;
+}
+
+#workspaces button {
+  all: initial;
+  background-color: @surface;
+}
+
+#workspaces button label {
+  color: @text;
+}
+
+#workspaces button.active label {
+  color: @love;
+}
+
+#wireplumber.muted {
+  color: @love;
+}
+
+tooltip {
+  padding: 16px;
+  background-color: @surface;
+  color: @text;
+}
+
+tooltip label {
+  padding: 5px;
+  background-color: @overlay;
+  color: @text;
 }

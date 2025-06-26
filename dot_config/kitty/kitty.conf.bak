@@ -27,7 +27,7 @@ shell_integration enabled
 
 # set with the command `kitty +kitten themes`
 # BEGIN_KITTY_THEME
-# Rosé Pine Dawn
+# Catppuccin-Latte
 include current-theme.conf
 # END_KITTY_THEME
 

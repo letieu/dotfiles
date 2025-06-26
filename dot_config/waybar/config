@@ -1,18 +1,20 @@
 {
   "layer": "top",
+  "exclusive": false,
   "position": "top",
-  "height": 12,
+  "height": 16,
   "margin": 0,
   "modules-left": [
-    "hyprland/workspaces"
-  ],
-  "modules-center": [
-    "clock"
-  ],
-  "modules-right": [
     "cpu",
     "memory",
     "battery",
+    "custom/kitty-tabs"
+  ],
+  "modules-center": [
+    "clock",
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
     "wireplumber",
     "network",
     "tray"
@@ -32,7 +34,10 @@
       "class<alacritty>": "",
       "class<vlc>": "",
       "class<virt-manager>": "",
-      "class<chromium>": ""
+      "class<chromium>": "",
+      "class<chrome>": "",
+      "class<waydroid>": "󰀲",
+      "class<postman>": ""
     }
   },
   "clock": {

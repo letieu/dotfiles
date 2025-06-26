@@ -5,8 +5,8 @@ send_notification() {
     local brightness=$(brightnessctl get)
     local max_brightness=$(brightnessctl max)
     local brightness_percent=$((brightness * 100 / max_brightness))
-    hyprctl dismissnotify # dismiss all notifications
-    hyprctl notify -1 1000 "rgb(ffff00)" " 󰃟   ${brightness_percent}%"
+
+    notify-send -h string:x-canonical-private-synchronous:sys-notify -u low "󰃟  ${brightness_percent} %"
 }
 
 # Change the brightness

@@ -1,0 +1,17 @@
+[Desktop Entry]
+Name=Arch-wm
+GenericName=Terminal entering Arch-wm
+Comment=Terminal entering Arch-wm
+Categories=Distrobox;System;Utility
+Exec=/usr/bin/distrobox enter  arch-wm
+Icon=/home/tieu/.local/share/icons/distrobox/arch.png
+Keywords=distrobox;
+NoDisplay=false
+Terminal=true
+TryExec=/usr/bin/distrobox
+Type=Application
+Actions=Remove;
+
+[Desktop Action Remove]
+Name=Remove Arch-wm from system
+Exec=/usr/bin/distrobox rm  arch-wm

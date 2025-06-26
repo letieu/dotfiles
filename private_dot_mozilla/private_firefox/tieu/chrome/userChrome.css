@@ -2,6 +2,14 @@
   --tab-min-height: 18px !important;
   --tab-min-height: 16px !important;
   --tab-inline-padding: 2px !important;
+
+  --color-tab-bg: #1f1d2e;
+  --color-tab-text: #e0def4;
+  --color-tab-selected-border: #31748f;
+
+  --tab-number-bg: transparency;
+  --tab-number-border: transparency;
+  --tab-number-text: #f6c177;
 }
 
 /* Title bar */
@@ -36,6 +44,8 @@ tab {
 }
 
 .tab-content {
+  color: var(--color-tab-text);
+  background-color: var(--color-tab-bg);
   padding: 0 0 0 var(--tab-inline-padding);
 }
 
@@ -46,7 +56,7 @@ tab {
 }
 
 .tabbrowser-tab[fadein] {
-  max-width: 100vw !important;
+  /* max-width: 100vw !important; */
   border: none;
 }
 
@@ -80,4 +90,39 @@ tab {
 /* Tab: selected colors */
 #tabbrowser-tabs .tabbrowser-tab[selected] .tab-content {
   font-weight: bold !important;
+  border-bottom: 2px solid var(--color-tab-selected-border);
+  color: white;
+}
+
+tabs {
+  counter-reset: tab-counter;
+}
+tab:nth-child(1) .tab-label::before,
+tab:nth-child(2) .tab-label::before,
+tab:nth-child(3) .tab-label::before,
+tab:nth-child(4) .tab-label::before,
+tab:nth-child(5) .tab-label::before,
+tab:nth-child(6) .tab-label::before,
+tab:nth-child(7) .tab-label::before,
+tab:nth-child(8) .tab-label::before {
+  background-color: var(--tab-number-bg, white);
+  border-radius: 0.25em;
+  border: 1px solid var(--tab-number-border, white);
+  box-sizing: border-box;
+  color: var(--tab-number-text, black);
+  content: counter(tab-counter) "";
+  counter-increment: tab-counter;
+  display: block;
+  float: left;
+  font-size: 0.8em;
+  font-weight: bold;
+  height: 1.5em;
+  line-height: 1;
+  margin: 0 0.5em 0 0;
+  padding: 0.1em 0.25em 0.25em 0.25em;
+  position: relative;
+  text-align: center;
+  top: 0.35em;
+  vertical-align: middle;
+  width: 1.4em;
 }
