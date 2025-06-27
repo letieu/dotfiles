@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=IDX
-GenericName=IDX
-Exec=firefox --new-window --kiosk https://idx.google.com/
-Terminal=false
-StartupNotify=false
-Categories=IDE;

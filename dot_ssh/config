@@ -1,0 +1,17 @@
+# default account
+Host github.com
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/tieu
+
+# account2
+# use with github-account2 host
+Host github-one
+	HostName github.com
+	User git
+	IdentityFile ~/.ssh/one
+
+# default for all other hosts
+Host *
+	User git
+	IdentityFile ~/.ssh/tieu

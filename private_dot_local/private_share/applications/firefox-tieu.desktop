@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=Firefox Tieu
-GenericName=Firefox Tieu
-TryExec=firefox -p tieu
-StartupNotify=true
-Exec=firefox -p tieu
-Icon=firefox

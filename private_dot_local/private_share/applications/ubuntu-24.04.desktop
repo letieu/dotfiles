@@ -1,8 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Type=Application
-Terminal=false
-Exec=quickemu --vm ubuntu-24.04.conf 
-Path=/home/tieu/VM
-Name=ubuntu-24.04
-Icon=qemu

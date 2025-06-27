@@ -13,9 +13,10 @@ add ~/.config/ranger
 add ~/.config/swappy
 add ~/.config/mako
 add ~/scripts
-add ~/.local/share/applications
 add ~/.mozilla/firefox/tieu/chrome
 add ~/.config/hypr
 add ~/.config/waybar
+add ~/.gitconfig
+add ~/.ssh/config
 
 git status

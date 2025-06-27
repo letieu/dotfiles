@@ -1,7 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=COM-sh
-GenericName=COM-sh
-Exec=bash -c /home/$USER/scripts/com.sh
-Terminal=true

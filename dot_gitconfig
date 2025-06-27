@@ -1,0 +1,17 @@
+# default config
+[user]
+	name = letieu
+	email = letieu8@gmail.com
+
+# specific config for ONE folder
+[includeIf "gitdir:~/code/ONE/"]
+  path = ~/code/ONE/.gitconfig
+
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[init]
+	defaultBranch = main
