@@ -7,8 +7,7 @@
   "modules-left": [
     "cpu",
     "memory",
-    "battery",
-    "custom/kitty-tabs"
+    "battery"
   ],
   "modules-center": [
     "clock",
