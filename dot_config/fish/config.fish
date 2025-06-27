@@ -37,4 +37,4 @@ fish_vi_key_bindings
 
 zoxide init fish | source
 
-fish_config theme choose "Rosé Pine Dawn"
+fish_config theme choose "Rosé Pine"
