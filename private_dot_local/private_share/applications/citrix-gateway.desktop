@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=Citrix Gateway
-Comment=Open citrix Gateway SSO
-Exec=/usr/bin/google-chrome-stable --new-window "https://sso-vpn.one-line.com/vpns/f_services_linux.html"
-Icon=google-chrome
-Terminal=false
-Categories=Network;WebBrowser;

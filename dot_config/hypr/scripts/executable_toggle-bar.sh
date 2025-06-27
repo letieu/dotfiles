@@ -1,5 +1,1 @@
-if pgrep -x waybar > /dev/null; then
-  pkill -x waybar
-else
-  waybar &
-fi
+pgrep -x waybar > /dev/null && pkill -x waybar || waybar &

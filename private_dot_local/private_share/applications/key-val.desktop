@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=Key Value
-GenericName=Key Value
-Exec=bash -c /home/$USER/scripts/key-val.sh
-Terminal=false
-StartupNotify=false
-Categories=GNOME;System;
