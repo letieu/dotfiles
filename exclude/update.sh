@@ -10,12 +10,8 @@ function add {
 add ~/.config/fish
 add ~/.config/kitty
 add ~/.config/ranger
-add ~/.config/swappy
-add ~/.config/mako
+add /mnt/c/Users/tieu.le/.config/wezterm
 add ~/scripts
-add ~/.mozilla/firefox/tieu/chrome
-add ~/.config/hypr
-add ~/.config/waybar
 add ~/.gitconfig
 add ~/.ssh/config
 
