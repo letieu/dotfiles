@@ -27,11 +27,8 @@ for dir in \
 end
 
 # Aliases
-alias h="Hyprland"
 alias v="nvim"
-alias icat='kitten icat'
 alias lg='v "+lua require(\'gitgraph\').draw({}, { all = true, max_count = 5000 })"'
-alias cpl='v "+lua require(\'CopilotChat\').toggle()"'
 
 fish_vi_key_bindings
 
