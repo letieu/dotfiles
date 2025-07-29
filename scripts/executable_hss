@@ -1,3 +1,4 @@
 #!/usr/bin/bash
 # vim:ft=bash
-eval $(cat $HOME/note/ssh.md | sk | cut -d',' -f2)
+# eval $(cat $HOME/note/ssh.md | sk | cut -d',' -f2)
+eval $(cat $HOME/note/ssh.md | sk | cut -d',' -f2 | sed 's/^/kitten /')
