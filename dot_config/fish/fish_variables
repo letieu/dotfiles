@@ -50,5 +50,5 @@ SETUVAR fish_pager_color_selected_background:\x1d
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:/home/tieu/\x2eyarn/bin\x1e/home/tieu/Android/Sdk/platform\x2dtools\x1e/home/tieu/\x2elocal/share/nvm/v22\x2e12\x2e0/bin\x1e/home/tieu/scripts\x1e/home/tieu/\x2elocal/bin\x1e/home/tieu/go/bin\x1e/opt/android\x2dstudio/android\x2dstudio/bin/
+SETUVAR fish_user_paths:/nix/var/nix/profiles/default/bin\x1e/home/tieu/\x2ecargo/bin\x1e/home/tieu/\x2eyarn/bin\x1e/home/tieu/Android/Sdk/platform\x2dtools\x1e/home/tieu/\x2elocal/share/nvm/v22\x2e12\x2e0/bin\x1e/home/tieu/scripts\x1e/home/tieu/\x2elocal/bin\x1e/home/tieu/go/bin\x1e/opt/android\x2dstudio/android\x2dstudio/bin/
 SETUVAR nvm_default_version:lts
