@@ -16,6 +16,7 @@ add ~/scripts
 add ~/.mozilla/firefox/tieu/chrome
 add ~/.config/hypr
 add ~/.config/waybar
+add ~/.config/wezterm
 add ~/.gitconfig
 add ~/.ssh/config
 

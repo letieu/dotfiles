@@ -1,7 +1,6 @@
 #!/bin/bash
 
 send_vol_notification() {
-    hyprctl dismissnotify # dismiss all notifications
     local volume=$(wpctl get-volume @DEFAULT_SINK@)
     notify-send -h string:x-canonical-private-synchronous:sys-notify -u low "󰕾  ${volume} %"
 }
