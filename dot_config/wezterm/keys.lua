@@ -111,7 +111,7 @@ local keys = {
   }
 }
 
-for i = 1, 9, 1 do
+for i = 1, 5, 1 do
   table.insert(keys, tab(i))
 end
 

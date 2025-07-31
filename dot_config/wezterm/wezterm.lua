@@ -1,13 +1,14 @@
+---@type Wezterm
 local wezterm = require 'wezterm'
+
 local theme = wezterm.plugin.require('https://github.com/neapsix/wezterm').main
 
 local config = wezterm.config_builder()
 
-if wezterm.config_builder then
-  config = wezterm.config_builder()
-end
+config.max_fps = 120
 
 config.font_size = 12.0
+config.font = wezterm.font('JetBrains Mono', {})
 config.line_height = 1.2
 
 config.window_decorations = "NONE"
