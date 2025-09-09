@@ -108,7 +108,7 @@ local keys = {
     key = 'H',
     mods = 'CTRL',
     action = wezterm.action.ActivateCopyMode,
-  }
+  },
 }
 
 for i = 1, 5, 1 do

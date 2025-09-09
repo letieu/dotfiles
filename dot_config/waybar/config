@@ -26,7 +26,7 @@
     "window-rewrite-default": "",
     "window-rewrite": {
       "class<kitty>": "",
-      "class<wezterm>": "",
+      "class<org.wezfurlong.wezterm>": "",
       "class<firefox-developer-edition>": "󰈹",
       "class<firefox>": "󰈹",
       "class<Chromium>": "",

@@ -20,19 +20,19 @@ start_docker
 start_postgres_container
 
 # Open Neovim in auth-backend directory and start the backend service in a horizontal split
-kitty @ launch --type=tab --tab-title=auth-be --cwd=/home/tieu/code/ONE/om-com-auth-backend nvim
-kitty @ launch --cwd=/home/tieu/code/ONE/om-com-auth-backend --location=hsplit sh -c "
+kitty @ launch --hold --type=tab --tab-title=auth-be --cwd=/home/tieu/code/ONE/om-com-auth-backend nvim
+kitty @ launch --hold --cwd=/home/tieu/code/ONE/om-com-auth-backend --location=hsplit sh -c "
   yarn auth-backend:start:dev
 "
 
 # Open Neovim in BFF directory and start the BFF service in a horizontal split
-kitty @ launch --type=tab --tab-title=bff --cwd=/home/tieu/code/ONE/om-com-bff nvim
-kitty @ launch --cwd=/home/tieu/code/ONE/om-com-bff --location=hsplit sh -c "
+kitty @ launch --hold --type=tab --tab-title=bff --cwd=/home/tieu/code/ONE/om-com-bff nvim
+kitty @ launch --hold --cwd=/home/tieu/code/ONE/om-com-bff --location=hsplit sh -c "
   yarn start:dev
 "
 
 # Open Neovim in COM-frontend directory and start service in a horizontal split
-kitty @ launch --type=tab --tab-title=fe --cwd=/home/tieu/code/ONE/om-com-frontend nvim
-kitty @ launch --cwd=/home/tieu/code/ONE/om-com-frontend --location=hsplit sh -c "
+kitty @ launch --hold --type=tab --tab-title=fe --cwd=/home/tieu/code/ONE/om-com-frontend nvim
+kitty @ launch --hold --cwd=/home/tieu/code/ONE/om-com-frontend --location=hsplit sh -c "
   yarn dev
 "

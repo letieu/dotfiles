@@ -1,14 +1,12 @@
 ---@type Wezterm
 local wezterm = require 'wezterm'
 
-local theme = wezterm.plugin.require('https://github.com/neapsix/wezterm').main
-
 local config = wezterm.config_builder()
 
 config.max_fps = 120
 
 config.font_size = 12.0
-config.font = wezterm.font('JetBrains Mono', {})
+config.font = wezterm.font('Monaspace Neon', {})
 config.line_height = 1.2
 
 config.window_decorations = "NONE"
@@ -32,6 +30,13 @@ config.window_padding = {
 
 -- config.disable_default_key_bindings = true
 config.keys = require("keys")
+
+local theme = {}
+if (os.getenv("THEME") == 'light') then
+  theme = wezterm.plugin.require('https://github.com/neapsix/wezterm').dawn
+else
+  theme = wezterm.plugin.require('https://github.com/neapsix/wezterm').main
+end
 
 config.colors = theme.colors()
 config.window_frame = theme.window_frame()
