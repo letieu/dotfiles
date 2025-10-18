@@ -43,3 +43,10 @@ fish_config theme choose "Rosé Pine"
 set --export PATH /home/tieu/.fvm_flutter/bin $PATH
 
 __check_nvm
+
+# pnpm
+set -gx PNPM_HOME "/home/tieu/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
