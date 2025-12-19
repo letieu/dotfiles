@@ -15,3 +15,7 @@
 	helper = !/usr/bin/gh auth git-credential
 [init]
 	defaultBranch = main
+[merge]
+	tool = vscode-diff
+[mergetool "vscode-diff"]
+	cmd = nvim \"$MERGED\" -c \"CodeDiff merge \\\"$MERGED\\\"\"
