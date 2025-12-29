@@ -37,8 +37,6 @@ fish_vi_key_bindings
 
 zoxide init fish | source
 
-fish_config theme choose "Rosé Pine"
-
 # FVM
 set --export PATH /home/tieu/.fvm_flutter/bin $PATH
 
@@ -50,3 +48,9 @@ if not string match -q -- $PNPM_HOME $PATH
   set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
+
+sync_gnome_theme
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH

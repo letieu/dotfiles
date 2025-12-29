@@ -2,7 +2,7 @@
 # VERSION: 3.0
 SETUVAR --export --path PATH:/home/tieu/\x2epyenv/bin\x1e/home/tieu/\x2ecabal/bin\x1e/home/tieu/\x2eghcup/bin\x1e/opt/google\x2dcloud\x2dcli/bin\x1e/home/tieu/\x2eyarn/bin\x1e/home/tieu/Android/Sdk/platform\x2dtools\x1e/home/tieu/\x2elocal/share/nvm/v22\x2e12\x2e0/bin\x1e/home/tieu/scripts\x1e/home/tieu/\x2elocal/bin\x1e/home/tieu/go/bin\x1e/opt/android\x2dstudio/android\x2dstudio/bin/\x1e/home/tieu/\x2epyenv/shims\x1e/home/tieu/\x2ecabal/bin\x1e/home/tieu/\x2eghcup/bin\x1e/opt/google\x2dcloud\x2dcli/bin\x1e/home/tieu/\x2enix\x2dprofile/bin\x1e/home/tieu/\x2elocal/share/pnpm\x1e/home/tieu/\x2ecabal/bin\x1e/home/tieu/\x2eghcup/bin\x1e/opt/google\x2dcloud\x2dcli/bin\x1e/home/tieu/\x2edeno/bin\x1e/usr/local/sbin\x1e/usr/local/bin\x1e/usr/bin\x1e/usr/bin/site_perl\x1e/usr/bin/vendor_perl\x1e/usr/bin/core_perl\x1e/usr/local/sbin\x1e/usr/local/bin\x1e/usr/sbin\x1e/usr/bin\x1e/sbin\x1e/bin\x1e/usr/sbin\x1e/sbin\x1e/bin
 SETUVAR --export PYENV_ROOT:/home/tieu/\x2epyenv
-SETUVAR __fish_initialized:3800
+SETUVAR __fish_initialized:4300
 SETUVAR _fisher_catppuccin_2F_fish_files:\x7e/\x2econfig/fish/themes/Catppuccin\x20Frappe\x2etheme\x1e\x7e/\x2econfig/fish/themes/Catppuccin\x20Latte\x2etheme\x1e\x7e/\x2econfig/fish/themes/Catppuccin\x20Macchiato\x2etheme\x1e\x7e/\x2econfig/fish/themes/Catppuccin\x20Mocha\x2etheme
 SETUVAR _fisher_jhillyerd_2F_plugin_2D_git_files:\x7e/\x2econfig/fish/functions/__git\x2ebranch_has_wip\x2efish\x1e\x7e/\x2econfig/fish/functions/__git\x2ecurrent_branch\x2efish\x1e\x7e/\x2econfig/fish/functions/__git\x2edefault_branch\x2efish\x1e\x7e/\x2econfig/fish/functions/__git\x2edestroy\x2efish\x1e\x7e/\x2econfig/fish/functions/__git\x2einit\x2efish\x1e\x7e/\x2econfig/fish/functions/gbage\x2efish\x1e\x7e/\x2econfig/fish/functions/gbda\x2efish\x1e\x7e/\x2econfig/fish/functions/gdv\x2efish\x1e\x7e/\x2econfig/fish/functions/gignored\x2efish\x1e\x7e/\x2econfig/fish/functions/glp\x2efish\x1e\x7e/\x2econfig/fish/functions/grename\x2efish\x1e\x7e/\x2econfig/fish/functions/grt\x2efish\x1e\x7e/\x2econfig/fish/functions/gtest\x2efish\x1e\x7e/\x2econfig/fish/functions/gtl\x2efish\x1e\x7e/\x2econfig/fish/functions/gunwip\x2efish\x1e\x7e/\x2econfig/fish/functions/gwip\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/git\x2efish
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
@@ -11,44 +11,5 @@ SETUVAR _fisher_lgathy_2F_google_2D_cloud_2D_sdk_2D_fish_2D_completion_files:\x7
 SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejorgebucaran/nvm\x2efish\x1ejhillyerd/plugin\x2dgit\x1elgathy/google\x2dcloud\x2dsdk\x2dfish\x2dcompletion\x1erose\x2dpine/fish\x1ecatppuccin/fish
 SETUVAR _fisher_rose_2D_pine_2F_fish_files:\x7e/\x2econfig/fish/themes/Ros\u00e9\x20Pine\x20Dawn\x2etheme\x1e\x7e/\x2econfig/fish/themes/Ros\u00e9\x20Pine\x20Moon\x2etheme\x1e\x7e/\x2econfig/fish/themes/Ros\u00e9\x20Pine\x2etheme
 SETUVAR _fisher_upgraded_to_4_4:\x1d
-SETUVAR fish_color_autosuggestion:9ca0b0
-SETUVAR fish_color_cancel:d20f39
-SETUVAR fish_color_command:1e66f5
-SETUVAR fish_color_comment:8c8fa1
-SETUVAR fish_color_cwd:df8e1d
-SETUVAR fish_color_cwd_root:red
-SETUVAR fish_color_end:fe640b
-SETUVAR fish_color_error:d20f39
-SETUVAR fish_color_escape:e64553
-SETUVAR fish_color_gray:9ca0b0
-SETUVAR fish_color_history_current:\x2d\x2dbold
-SETUVAR fish_color_host:1e66f5
-SETUVAR fish_color_host_remote:40a02b
-SETUVAR fish_color_keyword:d20f39
-SETUVAR fish_color_normal:4c4f69
-SETUVAR fish_color_operator:ea76cb
-SETUVAR fish_color_option:40a02b
-SETUVAR fish_color_param:dd7878
-SETUVAR fish_color_quote:40a02b
-SETUVAR fish_color_redirection:ea76cb
-SETUVAR fish_color_search_match:\x2d\x2dbackground\x3dccd0da
-SETUVAR fish_color_selection:\x2d\x2dbackground\x3dccd0da
-SETUVAR fish_color_status:d20f39
-SETUVAR fish_color_user:179299
-SETUVAR fish_color_valid_path:\x2d\x2dunderline
-SETUVAR fish_key_bindings:fish_vi_key_bindings
-SETUVAR fish_pager_color_background:\x1d
-SETUVAR fish_pager_color_completion:4c4f69
-SETUVAR fish_pager_color_description:9ca0b0
-SETUVAR fish_pager_color_prefix:ea76cb
-SETUVAR fish_pager_color_progress:9ca0b0
-SETUVAR fish_pager_color_secondary_background:\x1d
-SETUVAR fish_pager_color_secondary_completion:\x1d
-SETUVAR fish_pager_color_secondary_description:\x1d
-SETUVAR fish_pager_color_secondary_prefix:\x1d
-SETUVAR fish_pager_color_selected_background:\x1d
-SETUVAR fish_pager_color_selected_completion:\x1d
-SETUVAR fish_pager_color_selected_description:\x1d
-SETUVAR fish_pager_color_selected_prefix:\x1d
 SETUVAR fish_user_paths:/home/tieu/\x2eopencode/bin\x1e/nix/var/nix/profiles/default/bin\x1e/home/tieu/\x2ecargo/bin\x1e/home/tieu/\x2eyarn/bin\x1e/home/tieu/Android/Sdk/platform\x2dtools\x1e/home/tieu/\x2elocal/share/nvm/v22\x2e12\x2e0/bin\x1e/home/tieu/scripts\x1e/home/tieu/\x2elocal/bin\x1e/home/tieu/go/bin\x1e/opt/android\x2dstudio/android\x2dstudio/bin/
 SETUVAR nvm_default_version:lts
